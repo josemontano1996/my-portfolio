@@ -1,15 +1,12 @@
-import {
-  About,
-  Contact,
-  Experience,
-  Feedbacks,
-  Hero,
-  Navbar,
-  StarsCanvas,
-  Tech,
-  Works,
-} from '@/components';
+
 import { Metadata } from 'next';
+import About from '@/components/homePage/About';
+import Contact from '@/components/homePage/Contact';
+import Experience from '@/components/homePage/Experience';
+import Feedbacks from '@/components/homePage/Feedbacks';
+import Tech from '@/components/homePage/Tech';
+import Works from '@/components/homePage/Works';
+import Hero from '@/components/homePage/heroSection/Hero';
 
 export const metadata: Metadata = {
   title: 'jm3 | Portfolio',
@@ -19,14 +16,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <header className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
-          <StarsCanvas />
-        </div>
-      </header>
-      <main className='bg-primary'>
+      <main>
+      <Hero />
         <About />
         <Experience />
         <Tech />
@@ -39,5 +30,4 @@ export default function Home() {
     </>
   );
 }
-
 
