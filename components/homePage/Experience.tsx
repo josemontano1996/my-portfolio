@@ -1,28 +1,9 @@
 
 const Experience = () => {
   return (
-    <>
+    <section className="my-12">
   <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-  <div>Experiencie</div>
-    </>
+    </section>
     )
 };
 

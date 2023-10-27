@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <UIProvider>
-        <body className={`${inter.className}  bg-primary`}>
+        <body className={`${inter.className} bg-primary sm:px-16 px-6`}>
           <Navbar />
           {children}
         </body>

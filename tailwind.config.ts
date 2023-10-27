@@ -13,6 +13,8 @@ const config: Config = {
         primary: '#050816',
         secondary: '#aaa6c3',
         tertiary: '#151030',
+        info: '#dfd9ff',
+        'info-strong': '#915eff',
         'black-100': '#100d25',
         'black-200': '#090325',
         'white-100': '#f3f3f3',
@@ -22,9 +24,6 @@ const config: Config = {
       },
       screens: {
         xs: '450px',
-      },
-      backgroundImage: {
-        'hero-pattern': "url('/src/assets/herobg.png')",
       },
     },
   },

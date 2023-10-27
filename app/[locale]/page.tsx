@@ -1,4 +1,3 @@
-
 import { Metadata } from 'next';
 import About from '@/components/homePage/About';
 import Contact from '@/components/homePage/Contact';
@@ -17,7 +16,7 @@ export default function Home() {
   return (
     <>
       <main>
-      <Hero />
+        <Hero />
         <About />
         <Experience />
         <Tech />
