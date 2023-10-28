@@ -1,11 +1,9 @@
 import { Metadata } from 'next';
 import About from '@/components/homePage/About';
 import Contact from '@/components/homePage/Contact';
-import Experience from '@/components/homePage/Experience';
-import Feedbacks from '@/components/homePage/Feedbacks';
 import Tech from '@/components/homePage/Tech';
-import Works from '@/components/homePage/Works';
 import Hero from '@/components/homePage/heroSection/Hero';
+import Experience from '@/components/homePage/Experience';
 
 export const metadata: Metadata = {
   title: 'jm3 | Portfolio',
@@ -18,10 +16,8 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Experience />
         <Tech />
-        <Works />
-        <Feedbacks />
+        <Experience />
         <div className='relative z-0'>
           <Contact />
         </div>

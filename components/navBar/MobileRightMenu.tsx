@@ -38,25 +38,25 @@ export const MobileRightMenu = () => {
             </a>
           </li>
           <li
-            key={'work2'}
+            key={'experience2'}
             className={`hover:text-white text-[16px] font-medium cursor-pointer  text-secondary`}
           >
             <a
-              href='#about'
+              href='#experience'
               onClick={(event) => {
                 toggleSideMenu;
-                navigateTo(event, 'work');
+                navigateTo(event, 'experience');
               }}
             >
-              Work
+              experience
             </a>
           </li>
           <li
-            key={'work3'}
+            key={'contact2'}
             className={`hover:text-white text-[16px] font-medium cursor-pointer  text-secondary`}
           >
             <a
-              href='#about'
+              href='#contact'
               onClick={(event) => {
                 toggleSideMenu;
                 navigateTo(event, 'contact');

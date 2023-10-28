@@ -10,8 +10,8 @@ import { navigateTo } from '@/utils/navigateTo';
 //TODO: change links when using internationalization
 const Navbar = () => {
   return (
-    <header className='z-20 sticky top-0'>
-      <nav className=' w-full flex items-center py-5 top-0 z-20 bg-primary'>
+    <header className='z-20 fixed top-0 py-2 px-6 w-full left-0 bg-primary'>
+      <nav className='  flex items-center'>
         <div className='w-full flex justify-between items-center max-w-8xl mx-auto'>
           <Link href='/en' id='home' className='flex items-center gap-2'>
             <Image src={logo} alt='logo image' className='w-auto h-14 object-contain' />
@@ -27,11 +27,11 @@ const Navbar = () => {
               </a>
             </li>
             <li
-              key={'work'}
+              key={'experience'}
               className={`hover:text-white text-[18px] font-medium cursor-pointer  text-secondary`}
             >
-              <a href='#work' onClick={(event) => navigateTo(event, 'work')}>
-                Work
+              <a href='#experience' onClick={(event) => navigateTo(event, 'experience')}>
+                Experience
               </a>
             </li>
             <li
@@ -51,4 +51,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
 
