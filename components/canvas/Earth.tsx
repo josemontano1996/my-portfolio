@@ -14,7 +14,7 @@ const EarthCanvas = () => {
   return (
     <Canvas
       shadows
-      frameloop='demand'
+     /*  frameloop='demand' */
       gl={{ preserveDrawingBuffer: true }}
       camera={{
         fov: 45,
@@ -26,12 +26,13 @@ const EarthCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          autoRotate
+          autoRotate={true}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
         <Earth />
+        <Preload all />
       </Suspense>
     </Canvas>
   );
