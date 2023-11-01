@@ -61,6 +61,9 @@ devDependencies:
   '@types/react-dom':
     specifier: ^18
     version: 18.2.14
+  '@types/react-vertical-timeline-component':
+    specifier: ^3.3.5
+    version: 3.3.5
   autoprefixer:
     specifier: ^10
     version: 10.4.16(postcss@8.4.31)
@@ -70,6 +73,9 @@ devDependencies:
   eslint-config-next:
     specifier: 13.5.6
     version: 13.5.6(eslint@8.52.0)(typescript@5.2.2)
+  i:
+    specifier: ^0.3.7
+    version: 0.3.7
   postcss:
     specifier: ^8
     version: 8.4.31
@@ -513,6 +519,12 @@ packages:
     dependencies:
       '@types/react': 18.2.31
     dev: false
+
+  /@types/react-vertical-timeline-component@3.3.5:
+    resolution: {integrity: sha512-oduBHTmC+eRfJL+aZXfxurljtNpRlqfU+Vt6OzYfyprAIkcFY+GGAho/ZqUNk1KY3H2wy8hzyHjjaTZusYwZlw==}
+    dependencies:
+      '@types/react': 18.2.31
+    dev: true
 
   /@types/react@18.2.31:
     resolution: {integrity: sha512-c2UnPv548q+5DFh03y8lEDeMfDwBn9G3dRwfkrxQMo/dOtRHUUO57k6pHvBIfH/VF4Nh+98mZ5aaSe+2echD5g==}
@@ -1830,6 +1842,11 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.2
     dev: false
+
+  /i@0.3.7:
+    resolution: {integrity: sha512-FYz4wlXgkQwIPqhzC5TdNMLSE5+GS1IIDJZY/1ZiEPCT2S3COUVZeT5OW4BmW4r5LHLQuOosSwsvnroG9GR59Q==}
+    engines: {node: '>=0.4'}
+    dev: true
 
   /ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}

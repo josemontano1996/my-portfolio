@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section id='about'>
+    <section id='about' className="max-w-[85vw] mx-auto">
       <div className='flex flex-row items-start gap-5'>
         <div className='flex flex-col justify-center items-center'>
           <div className='w-5 h-5 rounded-full bg-info-strong' />
@@ -41,6 +41,4 @@ const About = () => {
 };
 
 export default About;
-
-
 
