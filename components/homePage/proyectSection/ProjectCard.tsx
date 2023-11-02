@@ -31,7 +31,12 @@ export const ProjectCard: FC<Props> = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
+            <a target='_blank' href={`${source_code_link}`}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <Image src={github} alt='source code' className='w-1/2 h-1/2 object-contain' />
+            </a>
             <a target='_blank' href={`${source_code_link}`}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >

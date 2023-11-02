@@ -12,7 +12,7 @@ const AnimatedWrapper: FC<Props> = ({ children }) => {
       initial='hidden'
       whileInView='show'
       viewport={{ once: true, amount: 0.25 }}
-      className=' mx-auto relative z-0 max-w-[85vw]'
+      className='mx-auto relative z-0 max-w-[85vw]'
     >
       {children}
     </motion.section>

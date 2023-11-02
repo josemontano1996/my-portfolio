@@ -5,7 +5,7 @@ import Image from 'next/image';
 import logo from '@/public/logo.webp';
 
 import { MobileRightMenu } from './MobileRightMenu';
-import { navigateTo } from '@/utils/navigateTo';
+import { onAnchorNavigation } from '@/utils/onAnchorNavigation';
 
 //TODO: change links when using internationalization
 const Navbar = () => {
@@ -22,7 +22,7 @@ const Navbar = () => {
               key={'about'}
               className={`hover:text-white text-[18px] font-medium cursor-pointer text-secondary`}
             >
-              <a href='#about' onClick={(event) => navigateTo(event, 'about')}>
+              <a href='#about' onClick={onAnchorNavigation}>
                 About
               </a>
             </li>
@@ -30,7 +30,7 @@ const Navbar = () => {
               key={'experience'}
               className={`hover:text-white text-[18px] font-medium cursor-pointer  text-secondary`}
             >
-              <a href='#experience' onClick={(event) => navigateTo(event, 'experience')}>
+              <a href='#experience' onClick={onAnchorNavigation}>
                 Experience
               </a>
             </li>
@@ -38,7 +38,7 @@ const Navbar = () => {
               key={'contact'}
               className={`hover:text-white text-[18px] font-medium cursor-pointer  text-secondary`}
             >
-              <a href='#contact' onClick={(event) => navigateTo(event, 'contact')}>
+              <a href='#contact' onClick={onAnchorNavigation}>
                 Contact
               </a>
             </li>

@@ -4,13 +4,13 @@ import { useContext } from 'react';
 import Image from 'next/image';
 import { menu, close } from '@/assets';
 import { UIContext } from '@/context/ui/UIContext';
-import { navigateTo } from '@/utils/navigateTo';
+import { onAnchorNavigation } from '@/utils/onAnchorNavigation';
 
 export const MobileRightMenu = () => {
   const { isSideMenuOpen, toggleSideMenu } = useContext(UIContext);
 
   return (
-    <div className='sm:hidden flex flex-1 justify-end items-center'>
+    <div className='sm:hidden flex flex-1 justify-end relative items-center'>
       <Image
         src={isSideMenuOpen ? close : menu}
         alt='menu'
@@ -20,7 +20,7 @@ export const MobileRightMenu = () => {
       <nav
         className={`${
           !isSideMenuOpen ? 'hidden' : 'flex'
-        } p-6  black-gradient absolute top-16 right-0  my-2 min-w-[140px] z-30 rounded-xl`}
+        } p-6  bg-tertiary absolute top-10 right-0  my-2 min-w-[140px] z-30 rounded-xl`}
       >
         <ul className='list-none flex justify-end items-start flex-col gap-4'>
           <li
@@ -31,7 +31,7 @@ export const MobileRightMenu = () => {
               href='#about'
               onClick={(event) => {
                 toggleSideMenu;
-                navigateTo(event, 'about');
+                 onAnchorNavigation(event);
               }}
             >
               About
@@ -45,7 +45,7 @@ export const MobileRightMenu = () => {
               href='#experience'
               onClick={(event) => {
                 toggleSideMenu;
-                navigateTo(event, 'experience');
+               onAnchorNavigation(event);
               }}
             >
               experience
@@ -59,7 +59,7 @@ export const MobileRightMenu = () => {
               href='#contact'
               onClick={(event) => {
                 toggleSideMenu;
-                navigateTo(event, 'contact');
+                onAnchorNavigation(event);
               }}
             >
               Contact

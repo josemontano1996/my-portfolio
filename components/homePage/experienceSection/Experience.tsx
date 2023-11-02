@@ -9,7 +9,7 @@ import { ExperienceCard } from './ExperienceCard';
 
 const Experience = () => {
   return (
-    <section id='experience'>
+    <section id='experience' className='mx-auto relative z-0 max-w-[85vw]'>
       <AnimatedWrapper>
         <motion.div variants={textVariant(0.2)}>
           <h5 className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'>
@@ -19,6 +19,8 @@ const Experience = () => {
             Experience
           </h2>
         </motion.div>
+      </AnimatedWrapper>
+      <AnimatedWrapper>
         <div className='mt-20 flex flex-col'>
           <VerticalTimeline>
             {experiences.map((experience, index) => (
