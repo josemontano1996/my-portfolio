@@ -14,10 +14,12 @@ import nodejs from './tech/nodejs.png';
 import reactjs from './tech/reactjs.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
-
+import udemy from './experience/udemypng.png';
+import nebrija from './experience/nebrija.webp';
+import PEP from './experience/PEP.jpg';
 
 export {
-  backend,  
+  backend,
   creator,
   mobile,
   web,
@@ -33,5 +35,7 @@ export {
   reactjs,
   tailwind,
   typescript,
-};  
-    
+  udemy,
+  nebrija,
+  PEP,
+};

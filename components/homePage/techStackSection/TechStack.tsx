@@ -11,7 +11,7 @@ const Tech = () => {
   const { lang } = useContext(UIContext);
   const t = loadTranslations(lang).homePage.techSection;
   return (
-    <section className='my-10'>
+    <section className='my-14'>
       <AnimatedWrapper>
         <motion.div variants={textVariant(0.1)}>
           <h5 className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'>

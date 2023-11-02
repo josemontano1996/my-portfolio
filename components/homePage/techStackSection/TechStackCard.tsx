@@ -11,7 +11,7 @@ interface Props {
   callToAction: string;
   ul: {
     ready: string[];
-    incoming: string[];
+    incoming?: string[];
   };
 }
 export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction }) => {

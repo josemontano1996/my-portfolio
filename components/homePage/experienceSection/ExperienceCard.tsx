@@ -8,6 +8,7 @@ interface Props {
   experience: {
     title: string;
     company_name: string;
+    certification_url: string;
     icon: any;
     iconBg: string;
     date: string;
@@ -41,6 +42,12 @@ export const ExperienceCard: FC<Props> = ({ experience }) => {
           {experience.company_name}
         </p>
       </div>
+
+      {experience.certification_url && (
+        <a href={experience.certification_url} target='_blank' className='inline-block my-1'>
+          View Certification
+        </a>
+      )}
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
