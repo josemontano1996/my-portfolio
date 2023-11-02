@@ -10,6 +10,7 @@ import { UIContext } from '@/context/ui/UIContext';
 import loadTranslations from '@/utils/loadTranslations';
 
 const Experience = () => {
+  
   const { lang } = useContext(UIContext);
   const t = loadTranslations(lang).homePage.experienceSection;
   return (
