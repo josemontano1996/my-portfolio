@@ -24,6 +24,10 @@ export const UIProvider: FC<Props> = ({ children }) => {
   const toggleSideMenu = () => {
     dispatch({ type: 'UI-Toggle Side Menu' });
   };
+
+  const toggleContactPopUp = () => {
+    dispatch({ type: 'UI-Toggle Contact PopUp' });
+  };
   return (
     <UIContext.Provider
       value={{
@@ -31,6 +35,7 @@ export const UIProvider: FC<Props> = ({ children }) => {
 
         //Methods
         toggleSideMenu,
+        toggleContactPopUp
       }}
     >
       {children}

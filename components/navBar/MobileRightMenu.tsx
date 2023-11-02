@@ -7,7 +7,8 @@ import { UIContext } from '@/context/ui/UIContext';
 import { onAnchorNavigation } from '@/utils/onAnchorNavigation';
 
 export const MobileRightMenu = () => {
-  const { isSideMenuOpen, toggleSideMenu } = useContext(UIContext);
+  const { isContactPopUpOpen, isSideMenuOpen, toggleSideMenu, toggleContactPopUp } =
+    useContext(UIContext);
 
   return (
     <div className='sm:hidden flex flex-1 justify-end relative items-center'>
@@ -30,8 +31,9 @@ export const MobileRightMenu = () => {
             <a
               href='#about'
               onClick={(event) => {
-                toggleSideMenu;
-                 onAnchorNavigation(event);
+                toggleSideMenu();
+                isContactPopUpOpen && toggleContactPopUp();
+                onAnchorNavigation(event);
               }}
             >
               About
@@ -44,26 +46,26 @@ export const MobileRightMenu = () => {
             <a
               href='#experience'
               onClick={(event) => {
-                toggleSideMenu;
-               onAnchorNavigation(event);
+                toggleSideMenu();
+                isContactPopUpOpen && toggleContactPopUp();
+                onAnchorNavigation(event);
               }}
             >
-              experience
+              Experience
             </a>
           </li>
           <li
             key={'contact2'}
             className={`hover:text-white text-[16px] font-medium cursor-pointer  text-secondary`}
           >
-            <a
-              href='#contact'
+            <button
               onClick={(event) => {
-                toggleSideMenu;
-                onAnchorNavigation(event);
+                toggleSideMenu();
+                toggleContactPopUp();
               }}
             >
               Contact
-            </a>
+            </button>
           </li>
         </ul>
       </nav>

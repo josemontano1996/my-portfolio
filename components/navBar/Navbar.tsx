@@ -6,9 +6,13 @@ import logo from '@/public/logo.webp';
 
 import { MobileRightMenu } from './MobileRightMenu';
 import { onAnchorNavigation } from '@/utils/onAnchorNavigation';
+import { useContext } from 'react';
+import { UIContext } from '@/context/ui/UIContext';
 
 //TODO: change links when using internationalization
 const Navbar = () => {
+  const { isContactPopUpOpen, toggleContactPopUp } = useContext(UIContext);
+
   return (
     <header className='z-20 fixed top-0 py-2 h-[10vh] px-6 w-full left-0 bg-primary'>
       <nav className='  flex items-center'>
@@ -22,7 +26,13 @@ const Navbar = () => {
               key={'about'}
               className={`hover:text-white text-[18px] font-medium cursor-pointer text-secondary`}
             >
-              <a href='#about' onClick={onAnchorNavigation}>
+              <a
+                href='#about'
+                onClick={(event) => {
+                  onAnchorNavigation(event);
+                  isContactPopUpOpen && toggleContactPopUp();
+                }}
+              >
                 About
               </a>
             </li>
@@ -30,7 +40,13 @@ const Navbar = () => {
               key={'experience'}
               className={`hover:text-white text-[18px] font-medium cursor-pointer  text-secondary`}
             >
-              <a href='#experience' onClick={onAnchorNavigation}>
+              <a
+                href='#experience'
+                onClick={(event) => {
+                  onAnchorNavigation(event);
+                  isContactPopUpOpen && toggleContactPopUp();
+                }}
+              >
                 Experience
               </a>
             </li>
@@ -38,9 +54,7 @@ const Navbar = () => {
               key={'contact'}
               className={`hover:text-white text-[18px] font-medium cursor-pointer  text-secondary`}
             >
-              <a href='#contact' onClick={onAnchorNavigation}>
-                Contact
-              </a>
+              <button onClick={toggleContactPopUp}>Contact</button>
             </li>
           </ul>
           <MobileRightMenu />
@@ -51,4 +65,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
