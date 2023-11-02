@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { FC } from 'react';
 import { fadeIn } from '../../../utils/motion';
-import { Tilt } from 'react-tilt';
-import { github } from '@/assets';
+
 import Image from 'next/image';
+import { github } from '@/public/images';
 
 interface Props {
   index: number;
@@ -32,12 +32,16 @@ export const ProjectCard: FC<Props> = ({
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
-            <a target='_blank' href={`${source_code_link}`}
+            <a
+              target='_blank'
+              href={`${source_code_link}`}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <Image src={github} alt='source code' className='w-1/2 h-1/2 object-contain' />
             </a>
-            <a target='_blank' href={`${source_code_link}`}
+            <a
+              target='_blank'
+              href={`${source_code_link}`}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <Image src={github} alt='source code' className='w-1/2 h-1/2 object-contain' />

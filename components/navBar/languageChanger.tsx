@@ -2,7 +2,6 @@
 
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
-import { useTranslation } from 'react-i18next';
 import i18nConfig from '@/i18nConfig';
 import { useContext } from 'react';
 import { UIContext } from '@/context/ui/UIContext';

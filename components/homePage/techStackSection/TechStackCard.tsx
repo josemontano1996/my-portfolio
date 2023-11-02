@@ -8,8 +8,13 @@ interface Props {
   index: number;
   title: string;
   icon: StaticImageData;
+  callToAction: string;
+  ul: {
+    ready: string[];
+    incoming: string[];
+  };
 }
-export const TechStackCart: FC<Props> = ({ index, title, icon }) => {
+export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -29,6 +34,7 @@ export const TechStackCart: FC<Props> = ({ index, title, icon }) => {
           >
             <Image src={icon} alt={`${title} icon`} className='w-16 h-16 object-contain ' />
             <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+            <p>{callToAction}</p>
           </div>
         </motion.div>
       ) : (
@@ -48,8 +54,19 @@ export const TechStackCart: FC<Props> = ({ index, title, icon }) => {
             options={{ max: 45, scale: 1, speed: 450 }}
             className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col cursor-pointer'
           >
-            <Image src={icon} alt={`${title} icon`} className='w-16 h-16 object-contain ' />
-            <h3 className='text-white text-[20px] font-bold text-center'>dfaasdfasd</h3>
+            <ul>
+              {ul.ready.map((li) => (
+                <li key={li} className='list-disc text-white my-1 text-lg font-bold'>
+                  {li}
+                </li>
+              ))}
+              {ul.incoming && <div className='mt-6 mb-3 text-xl my-1'>In progress</div>}
+              {ul.incoming?.map((li) => (
+                <li key={li} className='list-disc text-white text-lg font-bold'>
+                  {li}
+                </li>
+              ))}
+            </ul>
           </div>
         </motion.div>
       )}

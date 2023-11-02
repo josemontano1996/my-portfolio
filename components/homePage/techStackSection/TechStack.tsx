@@ -1,37 +1,36 @@
 'use client';
 import { motion } from 'framer-motion';
+import { UIContext } from '@/context/ui/UIContext';
 import { fadeIn, textVariant } from '@/utils/motion';
-import { services } from '@/constants/texts';
 import { TechStackCart } from './TechStackCard';
 import AnimatedWrapper from '../../Wrappers/AnimatedWrapper';
+import { useContext } from 'react';
+import loadTranslations from '@/utils/loadTranslations';
 
 const Tech = () => {
+  const { lang } = useContext(UIContext);
+  const t = loadTranslations(lang).homePage.techSection;
   return (
-      <section className='my-10'>
-    <AnimatedWrapper>
+    <section className='my-10'>
+      <AnimatedWrapper>
         <motion.div variants={textVariant(0.1)}>
           <h5 className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'>
-            Overview
+            {t.upperTitle}
           </h5>
           <h2 className='text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>
-            Tech
+            {t.title}
           </h2>
         </motion.div>
-        <motion.div variants={fadeIn('', '', 0.1, 1)}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia voluptatum nihil quia
-          veniam doloremque modi commodi. Dolore reprehenderit, explicabo tempore omnis voluptatibus
-          autem eligendi voluptatum voluptate nesciunt, eius quaerat soluta!
+        <motion.div variants={fadeIn('', '', 0.1, 1)} className='text-lg tracking-wide'>
+         {t.body}
         </motion.div>
-        <motion.div variants={fadeIn('', '', 0.1, 1)}>
-          Click on the cards to discover more!
-        </motion.div>
-        <div className='mt-20 flex flex-wrap gap-10'>
-          {services.map((service, index) => (
-            <TechStackCart key={service.title} index={index} {...service} />
+        <div className='mt-10 flex flex-wrap gap-10'>
+          {t.cards.map((card, index) => (
+            <TechStackCart key={card.title} callToAction={t.callToAction} index={index} {...card} />
           ))}
         </div>
-    </AnimatedWrapper>
-      </section>
+      </AnimatedWrapper>
+    </section>
   );
 };
 

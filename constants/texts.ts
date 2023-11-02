@@ -25,8 +25,6 @@ import {
   threejs,
 } from '../assets';
 
-
-
 const services = [
   {
     title: 'Web Developer',

@@ -2,10 +2,10 @@
 
 import { useContext } from 'react';
 import Image from 'next/image';
-import { menu, close } from '@/assets';
 import { UIContext } from '@/context/ui/UIContext';
 import { onAnchorNavigation } from '@/utils/onAnchorNavigation';
 import { LanguageChanger } from './languageChanger';
+import { menu, close } from '@/public/images';
 
 export const MobileRightMenu = () => {
   const { isContactPopUpOpen, isSideMenuOpen, toggleSideMenu, toggleContactPopUp } =

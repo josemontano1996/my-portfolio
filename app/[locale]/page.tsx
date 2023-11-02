@@ -24,7 +24,7 @@ export default async function Home({ params: { locale } }: Props) {
     <>
       <main>
         <Hero locale={locale} />
-        <About />
+        <About locale={locale} />
         <Tech />
         <Experience />
         <ProjectsSection />

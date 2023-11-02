@@ -4,7 +4,7 @@ import { useContext, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import emailjs from '@emailjs/browser';
-import { close } from '@/assets';
+import { close } from '@/public/images';
 import StarsCanvas from '../canvas/Stars';
 import { textVariant } from '../../utils/motion';
 import AnimatedWrapper from '../Wrappers/AnimatedWrapper';
