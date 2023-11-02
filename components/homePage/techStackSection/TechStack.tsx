@@ -2,13 +2,13 @@
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '@/utils/motion';
 import { services } from '@/constants/texts';
-import { ServiceCard } from './ServiceCard';
-import AnimatedWrapper from '../Wrappers/AnimatedWrapper';
+import { TechStackCart } from './TechStackCard';
+import AnimatedWrapper from '../../Wrappers/AnimatedWrapper';
 
 const Tech = () => {
   return (
+      <section className='my-10'>
     <AnimatedWrapper>
-      <section className='my-10 '>
         <motion.div variants={textVariant(0.1)}>
           <h5 className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'>
             Overview
@@ -27,14 +27,13 @@ const Tech = () => {
         </motion.div>
         <div className='mt-20 flex flex-wrap gap-10'>
           {services.map((service, index) => (
-            <ServiceCard key={service.title} index={index} {...service} />
+            <TechStackCart key={service.title} index={index} {...service} />
           ))}
         </div>
-      </section>
     </AnimatedWrapper>
+      </section>
   );
 };
 
 export default Tech;
-
 

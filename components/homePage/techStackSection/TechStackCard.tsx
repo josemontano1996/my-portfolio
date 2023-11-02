@@ -9,7 +9,7 @@ interface Props {
   title: string;
   icon: StaticImageData;
 }
-export const ServiceCard: FC<Props> = ({ index, title, icon }) => {
+export const TechStackCart: FC<Props> = ({ index, title, icon }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

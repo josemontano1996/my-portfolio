@@ -1,9 +1,11 @@
 import { Metadata } from 'next';
 import About from '@/components/homePage/About';
 import Contact from '@/components/homePage/Contact';
-import Tech from '@/components/homePage/Tech';
+import Tech from '@/components/homePage/techStackSection/TechStack';
 import Hero from '@/components/homePage/heroSection/Hero';
-import Experience from '@/components/homePage/Experience';
+import Experience from '@/components/homePage/experienceSection/Experience';
+import ProjectsSection from '@/components/homePage/proyectSection/ProjectsSection';
+
 
 export const metadata: Metadata = {
   title: 'jm3 | Portfolio',
@@ -18,9 +20,8 @@ export default function Home() {
         <About />
         <Tech />
         <Experience />
-        <div className='relative z-0'>
-          <Contact />
-        </div>
+        <ProjectsSection />
+        <Contact />
       </main>
     </>
   );
