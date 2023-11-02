@@ -6,10 +6,12 @@ import { uiReducer } from './uiReducer';
 
 export interface UIState {
   isSideMenuOpen: boolean;
+  isContactPopUpOpen: boolean;
 }
 
 const UI_INITIAL_STATE: UIState = {
   isSideMenuOpen: false,
+  isContactPopUpOpen: false,
 };
 
 interface Props {

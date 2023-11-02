@@ -4,7 +4,7 @@ import { createContext } from 'react';
 
 interface ContextProps {
   isSideMenuOpen: boolean;
-
+  isContactPopUpOpen: boolean;
   //Methods
   toggleSideMenu: () => void;
 }
