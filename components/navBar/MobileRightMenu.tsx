@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { menu, close } from '@/assets';
 import { UIContext } from '@/context/ui/UIContext';
 import { onAnchorNavigation } from '@/utils/onAnchorNavigation';
+import { LanguageChanger } from './languageChanger';
 
 export const MobileRightMenu = () => {
   const { isContactPopUpOpen, isSideMenuOpen, toggleSideMenu, toggleContactPopUp } =
@@ -66,6 +67,13 @@ export const MobileRightMenu = () => {
             >
               Contact
             </button>
+          </li>
+          <li className='mx-auto'>
+            <div
+              className={`hover:text-white text-[18px] ml-[-10px] font-medium cursor-pointer  text-secondary`}
+            >
+              <LanguageChanger />
+            </div>
           </li>
         </ul>
       </nav>

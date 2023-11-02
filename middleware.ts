@@ -3,7 +3,7 @@ import i18nConfig from './i18nConfig';
 import { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  return i18nRouter(request, i18nConfig);
+  return i18nRouter(request, i18nConfig as any);
 }
 
 // applies this middleware only to files in the app directory

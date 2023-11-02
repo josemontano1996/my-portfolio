@@ -1,21 +1,23 @@
 import EarthCanvas from '@/components/canvas/Earth';
 import StarsCanvas from '@/components/canvas/Stars';
 import { HeroCalltoActionButton } from './HeroCalltoActionButton';
+import loadTranslations from '@/utils/loadTranslations';
+import { FC } from 'react';
 
+interface Props {
+  locale: string;
+}
 
-const Hero = () => {
+const Hero:FC<Props> = ({ locale }) => {
+  const t = loadTranslations(locale).homePage.heroSection;
   return (
     <section className='min-h-[70vh]'>
       <div className='flex relative justify-between flex-col lg:flex-row '>
         <div className='lg:w-1/2 mt-4 text-center'>
           <div className='lg:absolute lg:w-[45vw] lg:top-[20%]'>
-            <h2 className='font-medium text-2xl lg:text-4xl'>
-              A World of Solutions at the Reach of Your Hand
-            </h2>
-            <h3 className='font-medium text-xl my-4 lg:my-8'>
-              The web developer you search, for the solutions you need.
-            </h3>
-          <HeroCalltoActionButton />
+            <h2 className='font-medium text-2xl lg:text-4xl'>{t.title}</h2>
+            <h3 className='font-medium text-xl my-4 lg:my-8'>{t.subtitle}</h3>
+            <HeroCalltoActionButton />
             <div></div>
           </div>
         </div>
@@ -29,6 +31,4 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
 

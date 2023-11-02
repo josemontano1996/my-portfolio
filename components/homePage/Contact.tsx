@@ -17,7 +17,7 @@ interface Form {
 }
 
 const Contact = () => {
-  const { isContactPopUpOpen } = useContext(UIContext);
+  const { isContactPopUpOpen, toggleContactPopUp } = useContext(UIContext);
 
   const [form, setForm] = useState<Form>({
     name: '',
@@ -90,6 +90,7 @@ const Contact = () => {
               src={close}
               alt='close button'
               className='w-[28px] h-[28px] object-contain absolute right-6 top-4 cursor-pointer'
+              onClick={toggleContactPopUp}
             />
             <p className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'>
               Get in touch
