@@ -1,4 +1,17 @@
-import { PEP, backend, creator, mobile, nebrija, udemy, web } from '@/public/images';
+import {
+  PEP,
+  backend,
+  calendarApp,
+  chefWebpage,
+  creator,
+  mobile,
+  nebrija,
+  pepWebpage,
+  portfolioWeb,
+  tesloShop,
+  udemy,
+  web,
+} from '@/public/images';
 
 export const homePage = {
   metadata: {
@@ -158,6 +171,182 @@ export const homePage = {
       },
     ],
   },
+  projectsSection: {
+    uppertitle: 'Mi trabajo',
+    title: 'Proyectos',
+    inProgressTitle: 'En desarrollo',
+    finishedProyectsTitle: 'Terminados',
+    projects: [
+      {
+        name: 'Portfolio',
+        description: `Esta es la página por la que está navegando. Viene con las mejores prácticas SEO, 
+        internacionalización en 3 idiomas, SSGs y el nuevo App Router`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Three.js',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: portfolioWeb,
+        webpage_link: 'https://jm3development.vercel.app',
+        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
+      },
+      {
+        name: 'Teslo Shop',
+        description: `E-commerce Full-Stack de ropa con integración de paypal, que permite a los usuarios buscar y comprar ropa. 
+          Desarrollado usando Next.js para el front-end y back-end, y MongoDB como base de datos.`,
+        tags: [
+          {
+            name: 'Desktop',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'NextAuth',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Paypal',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Mongoose',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Cloudinary',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: tesloShop,
+        webpage_link: 'https://teslo-shop-ruby.vercel.app',
+        source_code_link: 'https://github.com/josemontano1996/teslo-shop',
+      },
+      {
+        name: 'Calendario Grupal',
+        description: `Página web de calendario de equipo hecha con React, donde las personas de un mismo equipo pueden registrarse 
+        e iniciar sesión para crear eventos en un calendario compartido para una mejor organización, todos los usuarios y
+        eventos vienen a través de esta API y se manejan adecuadamente.`,
+        tags: [
+          {
+            name: 'Desktop',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Redux Toolkit',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Express.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Mongoose',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: calendarApp,
+        webpage_link: 'https://thriving-moonbeam-22f2bd.netlify.app/',
+        source_code_link: 'https://github.com/josemontano1996/react-calendar-app',
+      },
+    ],
+    inprogress: [
+      {
+        name: 'PEP Website',
+        description: `Página web para PEP .e.V, actualmente en desarrollo.`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Stripe Payments',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: pepWebpage,
+        webpage_link: '',
+        source_code_link: '',
+      },
+      {
+        name: 'Chef Webpage',
+        description: `Página web Full-Stack para Chef privado, se usará para el 
+        envío de comida y la organización de eventos`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Stripe Payments',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: chefWebpage,
+        webpage_link: '',
+        source_code_link: '',
+      },
+    ],
+  },
 };
 
 export const navBar = {
@@ -165,3 +354,22 @@ export const navBar = {
   experience: 'Experiencia',
   contact: 'Contacto',
 };
+
+export const contactPopUp = {
+  upperTitle: 'PONTE EN CONTACTO',
+  callToAction: 'Mi cuenta de Linkedin',
+  title: 'Contacto.',
+  name: 'Tu nombre',
+  nameLabel: '¿Cuál es tu nombre?',
+  email: 'Tu correo electrónico',
+  emailLabel: '¿Cuál es tu dirección de correo electrónico?',
+  message: 'Tu mensaje',
+  messageLabel: '¿Qué te gustaría decir?',
+  send: 'Enviar',
+  alertError: 'Algo salió mal, por favor inténtalo de nuevo más tarde.',
+  alertError1: 'El nombre debe tener al menos 2 letras.',
+  alertError2: 'Tu correo electrónico no es válido, por favor revísalo de nuevo.',
+  alertError3: 'El mensaje debe tener al menos 10 letras de longitud.',
+  alertSuccess: 'Gracias. Tu mensaje se envió correctamente.',
+};
+

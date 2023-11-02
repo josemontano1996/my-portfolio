@@ -8,7 +8,7 @@ interface Props {
   experience: {
     title: string;
     company_name: string;
-    certification_url: string;
+    certification_url?: string;
     icon: any;
     iconBg: string;
     date: string;

@@ -1,4 +1,17 @@
-import { PEP, backend, creator, mobile, nebrija, udemy, web } from '@/public/images';
+import {
+  PEP,
+  backend,
+  calendarApp,
+  chefWebpage,
+  creator,
+  mobile,
+  nebrija,
+  pepWebpage,
+  portfolioWeb,
+  tesloShop,
+  udemy,
+  web,
+} from '@/public/images';
 
 export const homePage = {
   metadata: {
@@ -161,10 +174,203 @@ export const homePage = {
       },
     ],
   },
+  projectsSection: {
+    uppertitle: 'My Work',
+    title: 'Projects',
+    inProgressTitle: 'In development',
+    finishedProyectsTitle: 'Finished',
+    projects: [
+      {
+        name: 'Portfolio Webpage',
+        description: `This page you are navigating through. It comes with best SEO practices, internationalization in 3 languages, SSGs and the
+        new App Router`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Three.js',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: portfolioWeb,
+        webpage_link: 'https://jm3development.vercel.app',
+        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
+      },
+      {
+        name: 'Teslo Shop',
+        description: `Full-Stack clothing e-commerce with paypal integration, that allows users to search and buy clothing. 
+          Developed using Next.js for the front- end and backend, and MongoDB as a database`,
+        tags: [
+          {
+            name: 'Desktop',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'NextAuth',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Paypal',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Mongoose',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Cloudinary',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: tesloShop,
+        webpage_link: 'https://teslo-shop-ruby.vercel.app',
+        source_code_link: 'https://github.com/josemontano1996/teslo-shop',
+      },
+      {
+        name: 'Team Calendar',
+        description: `Team calendar webpage made with React, where people from the same team can register 
+        and log in to create events in a shared calendar for better organization, all the user and
+        events data come through this API and are properly handled.`,
+        tags: [
+          {
+            name: 'Desktop',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Redux Toolkit',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Express.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Mongoose',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: calendarApp,
+        webpage_link: 'https://thriving-moonbeam-22f2bd.netlify.app/',
+        source_code_link: 'https://github.com/josemontano1996/react-calendar-app',
+      },
+    ],
+    inprogress: [
+      {
+        name: 'PEP Website',
+        description: `PEP .e.V webpage development, currently in progress.`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Stripe Payments',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: pepWebpage,
+        webpage_link: '',
+        source_code_link: '',
+      },
+      {
+        name: 'Chef Webpage',
+        description: `Private Chef Full-Stack webpage that will be used for food delivery and events management`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Stripe Payments',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: chefWebpage,
+        webpage_link: '',
+        source_code_link: '',
+      },
+    ],
+  },
 };
 
 export const navBar = {
   about: 'About',
   experience: 'Experience',
   contact: 'Contact',
+};
+
+export const contactPopUp = {
+  upperTitle: 'GET IN TOUCH',
+  callToAction: 'My Linkedin Account',
+  title: 'Contact.',
+  name: 'Your name',
+  nameLabel: `What's your good name?`,
+  email: 'Your Email',
+  emailLabel: `What's your email address`,
+  message: 'Your Message',
+  messageLabel: `What do you have to say?`,
+  send: 'Send',
+  alertError: 'Something went wrong, please try again later.',
+  alertError1: 'Name length should have a length of at least 2 letters.',
+  alertError2: 'Your email is invalid, check it again please.',
+  alertError3: 'The message should be at least 10 letters long.',
+  alertSuccess: 'Thank you. Your message was succesfully sent.',
 };

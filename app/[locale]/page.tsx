@@ -28,7 +28,7 @@ export default async function Home({ params: { locale } }: Props) {
         <Tech />
         <Experience />
         <ProjectsSection />
-        <Contact />
+       
       </main>
     </>
   );

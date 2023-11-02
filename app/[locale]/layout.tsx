@@ -4,6 +4,7 @@ import '../globals.css';
 import { UIProvider } from '@/context/ui/UIProvider';
 import Navbar from '@/components/navBar/Navbar';
 import i18nConfig from '@/i18nConfig';
+import Contact from '@/components/homePage/Contact';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,9 +25,11 @@ export default function RootLayout({
         <body className={`${inter.className} bg-primary sm:px-16 px-6`}>
           <Navbar />
           <div className='mt-[10vh]'>{children}</div>
+          <Contact />
         </body>
       </UIProvider>
     </html>
   );
 }
+
 
