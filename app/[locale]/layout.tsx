@@ -22,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <UIProvider>
-        <body className={`${inter.className} bg-primary sm:px-16 px-6`}>
+        <body
+          className={`${inter.className} bg-primary sm:px-16 px-6 w-screen`}
+        >
           <Navbar />
           <div className='mt-[10vh]'>{children}</div>
           <Contact />
@@ -31,5 +33,6 @@ export default function RootLayout({
     </html>
   );
 }
+
 
 

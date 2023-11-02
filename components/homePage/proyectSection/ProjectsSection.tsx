@@ -1,8 +1,7 @@
 'use client';
 
 import AnimatedWrapper from '@/components/Wrappers/AnimatedWrapper';
-import { projects } from '@/constants/texts';
-import { textVariant, fadeIn } from '@/utils/motion';
+import { textVariant } from '@/utils/motion';
 import { motion } from 'framer-motion';
 import { ProjectCard } from './ProjectCard';
 import { useContext } from 'react';

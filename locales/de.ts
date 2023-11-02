@@ -155,7 +155,7 @@ export const homePage = {
       },
       {
         order: 1,
-        title: '100 Tage des Codes - 2023 Webentwicklungsbootcamp',
+        title: '100 Tage des Codes - 2023 Webentwicklungs Bootcamp',
         company_name: 'Udemy',
         certification_url:
           'https://www.udemy.com/certificate/UC-d08e5c85-4041-4286-ac6a-d6cac5a907cf/',

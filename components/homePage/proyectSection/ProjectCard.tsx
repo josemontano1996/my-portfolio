@@ -3,7 +3,7 @@ import { FC } from 'react';
 import { fadeIn } from '../../../utils/motion';
 
 import Image from 'next/image';
-import { github, linkImg } from '@/public/images';
+import { github } from '@/public/images';
 
 interface Props {
   index: number;

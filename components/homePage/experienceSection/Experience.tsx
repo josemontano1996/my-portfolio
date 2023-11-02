@@ -26,11 +26,11 @@ const Experience = () => {
       </AnimatedWrapper>
       <AnimatedWrapper>
         <div className='mt-20 flex flex-col'>
-          <div>
+          <VerticalTimeline>
             {t.experiences.map((experience, index) => (
               <ExperienceCard key={index} experience={experience} />
             ))}
-          </div>
+          </VerticalTimeline>
         </div>
       </AnimatedWrapper>
     </section>
