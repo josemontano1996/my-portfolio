@@ -18,11 +18,11 @@ import typescript from './tech/typescript.png';
 import udemy from './experience/udemypng.png';
 import nebrija from './experience/nebrija.webp';
 import PEP from './experience/PEP.jpg';
-import tesloShop from './projects/tesloshop.jpg'
-import calendarApp from './projects/calendarApp.jpg';
-import portfolioWeb from './projects/portfolioweb.jpg';
-import pepWebpage from './projects/pepwebpage.jpg';
-import chefWebpage from './projects/chefwepage.jpg';
+import tesloShop from './projects/tesloshop.png'
+import calendarApp from './projects/calendarApp.png';
+import portfolioWeb from './projects/portfolioweb.png';
+import pepWebpage from './projects/pepwebpage.png';
+import chefWebpage from './projects/chefwepage.png';
 
 export {
   linkImg,
