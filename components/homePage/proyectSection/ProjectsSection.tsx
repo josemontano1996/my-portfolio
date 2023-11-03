@@ -44,7 +44,7 @@ const ProyectsSection = () => {
           <div className='mt-8 flex flex-wrap xl:grid xl:grid-cols-3 gap-7'>
             {t.inprogress?.map((project, index) => (
               // eslint-disable-next-line react/jsx-no-undef
-              <ProjectCard key={index} {...project} />
+              <ProjectCard key={index} index={index} {...project} />
             ))}
           </div>
         </div>
@@ -55,7 +55,7 @@ const ProyectsSection = () => {
           <div className='mt-8 flex flex-wrap gap-7'>
             {t.projects.map((project, index) => (
               // eslint-disable-next-line react/jsx-no-undef
-              <ProjectCard key={index} {...project} />
+              <ProjectCard key={index} index={index} {...project} />
             ))}
           </div>
         </div>

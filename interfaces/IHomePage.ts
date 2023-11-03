@@ -85,7 +85,6 @@ export interface IProjectsSection {
 }
 
 export interface IProjectElement {
-  index?: number;
   name: string;
   description: string;
   tags: {

@@ -5,7 +5,11 @@ import Image from 'next/image';
 import { fadeIn } from '../../../utils/motion';
 import { IProjectElement } from '@/interfaces/IHomePage';
 
-export const ProjectCard: FC<IProjectElement> = ({
+interface Props extends IProjectElement {
+  index: number;
+}
+
+export const ProjectCard: FC<Props> = ({
   index,
   name,
   description,
