@@ -1,4 +1,4 @@
-import { IHomePage } from '@/interfaces/IHomePage';
+import { IFooter, IHomePage } from '@/interfaces/IHomePage';
 import { IContactPopUp, INavBar } from '@/interfaces/IShared';
 import {
   PEP,
@@ -403,6 +403,12 @@ export const homePage: IHomePage = {
     ],
   },
 };
+
+export const footer: IFooter = {
+  uppertitle: '¿Te gustaría saber más sobre mí?',
+  title: 'Contáctame.',
+};
+
 
 export const navBar: INavBar = {
   about: 'Sobre mi',

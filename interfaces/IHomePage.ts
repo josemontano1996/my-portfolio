@@ -85,7 +85,7 @@ export interface IProjectsSection {
 }
 
 export interface IProjectElement {
-  index: number;
+  index?: number;
   name: string;
   description: string;
   tags: {
@@ -95,4 +95,9 @@ export interface IProjectElement {
   image: any; // Assuming image property holds the path or reference to the image
   webpage_link?: string;
   source_code_link?: string;
+}
+
+export interface IFooter {
+  uppertitle: string;
+  title: string;
 }

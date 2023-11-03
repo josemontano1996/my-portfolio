@@ -1,5 +1,5 @@
 import { INavBar, IContactPopUp } from '@/interfaces/IShared';
-import { IHomePage } from '../interfaces/IHomePage';
+import { IFooter, IHomePage } from '../interfaces/IHomePage';
 import {
   PEP,
   backend,
@@ -405,6 +405,11 @@ export const homePage: IHomePage = {
       },
     ],
   },
+};
+
+export const footer: IFooter = {
+  uppertitle: 'Would you like to know more about me?',
+  title: 'Contact me.',
 };
 
 export const navBar: INavBar = {

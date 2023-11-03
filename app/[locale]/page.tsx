@@ -8,6 +8,8 @@ import Experience from '@/components/homePage/experienceSection/Experience';
 import ProjectsSection from '@/components/homePage/proyectSection/ProjectsSection';
 import { IMetadada } from '@/interfaces/IHomePage';
 
+import Footer from '@/components/homePage/Footer';
+
 export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
   const t = loadTranslations(locale).homePage.metadata as IMetadada;
   return {
@@ -38,6 +40,9 @@ export default async function Home({ params: { locale } }: Props) {
         <Experience />
         <ProjectsSection />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
