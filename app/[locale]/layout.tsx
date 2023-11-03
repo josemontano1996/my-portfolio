@@ -1,9 +1,10 @@
 import { Inter } from 'next/font/google';
 import '../globals.css';
 
+import i18nConfig from '@/i18nConfig';
+
 import { UIProvider } from '@/context/ui/UIProvider';
 import Navbar from '@/components/navBar/Navbar';
-import i18nConfig from '@/i18nConfig';
 import Contact from '@/components/homePage/Contact';
 
 const inter = Inter({ subsets: ['latin'] });

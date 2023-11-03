@@ -22,7 +22,7 @@ const Tech = () => {
           </h2>
         </motion.div>
         <motion.div variants={fadeIn('', '', 0.1, 1)} className='text-lg tracking-wide'>
-         {t.body}
+          {t.body}
         </motion.div>
         <div className='mt-10 flex flex-wrap gap-10'>
           {t.cards.map((card, index) => (

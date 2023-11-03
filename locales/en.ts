@@ -1,23 +1,55 @@
 import {
   PEP,
   backend,
+  bootstrap,
   calendarApp,
   chefWebpage,
   creator,
+  css,
+  expressjs,
+  java,
+  javascript,
   mobile,
+  mongodb,
+  mui,
+  mysql,
   nebrija,
+  nextjs,
+  nodejs,
   pepWebpage,
+  php,
   portfolioWeb,
+  react,
+  restapi,
+  sass,
+  sql,
+  tailwind,
   tesloShop,
+  typescript,
   udemy,
   web,
 } from '@/public/images';
 
 export const homePage = {
   metadata: {
-    title: 'jm3 Web Development',
-    description: 'Home page for jm3 full stack web developer',
+    title: 'jm3 - Full Stack Web Developer Portfolio',
+    description: `Welcome to my portfolio! I'm a full stack developer specializing 
+    in web development, applications, and systems. Check out my projects and experience
+    in technologies like TypeScript, JavaScript, React, Node.js, and more.`,
+    keyword: `developer,web developer, full stack, web development, applications, javascript,
+     mongo db, express.js, next app router, next pages router, react server components`,
+    og: {
+      title: `jm3 - Full Stack Web Developer Portfolio`,
+      description: `Welcome to my portfolio! I'm a full stack developer specializing 
+    in web development, applications, and systems. Check out my projects and experience
+    in technologies like TypeScript, JavaScript, React, Node.js, and more.`,
+      type: 'website',
+      image:
+        'https://res.cloudinary.com/dfupfbnez/image/upload/v1699010770/portfolioweb_h5atzn.png',
+      url: process.env.NEXT_PUBLIC_WEB_URL,
+    },
   },
+
   heroSection: {
     title: 'A World of Solutions at the Reach of Your Hand',
     subtitle: 'The web developer you search, for the solutions you need.',
@@ -37,7 +69,7 @@ export const homePage = {
   },
   techSection: {
     upperTitle: 'Overview',
-    title: 'Tech',
+    title: 'Tech.',
     body: `As a Full-Stack Developer, I thrive on versatility. My journey in the realm of technology
           has equipped me with the skills to create comprehensive solutions. From front-end design
           to back-end development, I navigate the entire spectrum, ensuring that the websites I
@@ -48,37 +80,59 @@ export const homePage = {
         title: 'Programming Languages',
         icon: web,
         ul: {
-          ready: ['TypeScript', 'JavaScript'],
-          incoming: ['Java', 'PHP'],
+          ready: [
+            { name: 'TypeScript', icon: typescript, alt: 'Typescript' },
+            { name: 'JavaScript', icon: javascript, alt: 'JavaScript' },
+          ],
+          incoming: [
+            { name: 'Java', icon: java, alt: 'Java' },
+            { name: 'PHP', icon: php, alt: 'PHP' },
+          ],
         },
       },
       {
         title: 'Front-End',
         icon: mobile,
         ul: {
-          ready: ['React', 'Css3', 'Sass', 'Tailwind', 'Bootstrap', 'Material UI'],
+          ready: [
+            { name: 'React', icon: react, alt: 'React' },
+            { name: 'Css3', icon: css, alt: 'Css' },
+            { name: 'Sass', icon: sass, alt: 'Sass' },
+            { name: 'Tailwind', icon: tailwind, alt: 'Tailwind' },
+            { name: 'Bootstrap', icon: bootstrap, alt: 'Bootstrap' },
+            { name: 'Material UI', icon: mui, alt: 'Material UI' },
+          ],
         },
       },
       {
         title: 'Back-End',
         icon: backend,
         ul: {
-          ready: ['Next.js', 'Express.js', 'REST APIs', 'EJS', 'MVC'],
+          ready: [
+            { name: 'Next.js', icon: nextjs, alt: 'Next js', bg: '#fff' },
+            { name: 'Express.js', icon: expressjs, alt: 'Express js', bg: '#fff' },
+            { name: 'Node.js', icon: nodejs, alt: 'Node js' },
+            { name: 'REST APIs', icon: restapi, alt: 'Rest API', bg: '#fff' },
+            { name: 'MVC', icon: sql, alt: 'MVC', bg: '#fff' },
+          ],
         },
       },
       {
         title: 'Databases',
         icon: creator,
         ul: {
-          ready: ['MongoDB', 'Mongoose'],
-          incoming: ['SQL', 'MySQL'],
+          ready: [
+            { name: 'MongoDB', icon: mongodb, alt: 'MongoDB' },
+            { name: 'Mongoose', icon: mongodb, alt: 'Mongoose' },
+          ],
+          incoming: [{ name: 'MySQL', icon: mysql, alt: 'MySQL' }],
         },
       },
     ],
   },
   experienceSection: {
-    uppertitle: 'What I have done so far',
-    title: 'Experience',
+    uppertitle: 'What have I done so far?',
+    title: 'Experience.',
     experiences: [
       {
         order: 6,
@@ -89,7 +143,7 @@ export const homePage = {
         iconBg: '#383E56',
         date: 'October 2023 - Present',
         points: [
-          'Creating a brand-new website from scratch',
+          'Creating a brand-new website from scratch.',
           'Developing a responsive, multilingual site (German, Spanish, English) with top-notch SEO practices.',
           `Enhancing the organization's online presence.`,
           'Boosting donation rates and implementing a secure payment platform for seamless transactions.',
@@ -106,7 +160,7 @@ export const homePage = {
         iconBg: '#383E56',
         date: 'October 2023 - Present',
         points: [
-          'Learning the core of software development',
+          'Learning the core of software development.',
           'Development and maintenance of web applications using technologies such as Java, PHP, or other relevant languages.',
           'Development of cross-platform applications: desktop, web and mobile.',
           'Development of secure applications and protection of information.',
@@ -176,18 +230,18 @@ export const homePage = {
   },
   projectsSection: {
     uppertitle: 'My Work',
-    title: 'Projects',
+    title: 'Projects.',
     inProgressTitle: 'In development',
     finishedProyectsTitle: 'Finished',
     projects: [
       {
         name: 'Portfolio Webpage',
         description: `This page you are navigating through. It comes with best SEO practices, internationalization in 3 languages, SSGs and the
-        new App Router`,
+        new App Router.`,
         tags: [
           {
             name: 'Fully-Responsive',
-            color: 'pink-text-gradient',
+            color: 'green-text-gradient',
           },
           {
             name: 'TypeScript',
@@ -195,15 +249,15 @@ export const homePage = {
           },
           {
             name: 'Next.js',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Three.js',
             color: 'pink-text-gradient',
           },
           {
-            name: 'Tailwind',
+            name: 'Three.js',
             color: 'blue-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'pink-text-gradient',
           },
           {
             name: 'React i18next',
@@ -217,11 +271,11 @@ export const homePage = {
       {
         name: 'Teslo Shop',
         description: `Full-Stack clothing e-commerce with paypal integration, that allows users to search and buy clothing. 
-          Developed using Next.js for the front- end and backend, and MongoDB as a database`,
+          Developed using Next.js for the front- end and backend, and MongoDB as a database.`,
         tags: [
           {
             name: 'Desktop',
-            color: 'pink-text-gradient',
+            color: 'green-text-gradient',
           },
           {
             name: 'Next.js',
@@ -237,11 +291,11 @@ export const homePage = {
           },
           {
             name: 'Mongoose',
-            color: 'green-text-gradient',
+            color: 'pink-text-gradient',
           },
           {
             name: 'Cloudinary',
-            color: 'pink-text-gradient',
+            color: 'green-text-gradient',
           },
         ],
         image: tesloShop,
@@ -256,15 +310,15 @@ export const homePage = {
         tags: [
           {
             name: 'Desktop',
-            color: 'pink-text-gradient',
+            color: 'blue-text-gradient',
           },
           {
             name: 'React',
-            color: 'blue-text-gradient',
+            color: 'green-text-gradient',
           },
           {
             name: 'Redux Toolkit',
-            color: 'blue-text-gradient',
+            color: 'pink-text-gradient',
           },
           {
             name: 'Express.js',
@@ -299,7 +353,7 @@ export const homePage = {
           },
           {
             name: 'Stripe Payments',
-            color: 'pink-text-gradient',
+            color: 'green-text-gradient',
           },
           {
             name: 'Tailwind',
@@ -307,7 +361,7 @@ export const homePage = {
           },
           {
             name: 'React i18next',
-            color: 'green-text-gradient',
+            color: 'pink-text-gradient',
           },
         ],
         image: pepWebpage,
@@ -316,7 +370,7 @@ export const homePage = {
       },
       {
         name: 'Chef Webpage',
-        description: `Private Chef Full-Stack webpage that will be used for food delivery and events management`,
+        description: `Private Chef Full-Stack webpage that will be used for food delivery and events management.`,
         tags: [
           {
             name: 'Fully-Responsive',
@@ -332,7 +386,7 @@ export const homePage = {
           },
           {
             name: 'Stripe Payments',
-            color: 'pink-text-gradient',
+            color: 'green-text-gradient',
           },
           {
             name: 'Tailwind',
@@ -340,7 +394,7 @@ export const homePage = {
           },
           {
             name: 'React i18next',
-            color: 'green-text-gradient',
+            color: 'pink-text-gradient',
           },
         ],
         image: chefWebpage,

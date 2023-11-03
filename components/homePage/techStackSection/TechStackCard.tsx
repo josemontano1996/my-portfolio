@@ -10,8 +10,8 @@ interface Props {
   icon: StaticImageData;
   callToAction: string;
   ul: {
-    ready: string[];
-    incoming?: string[];
+    ready: { name: string; icon?: any; alt?: string; bg?: string }[];
+    incoming?: { name: string; icon?: any; alt?: string; bg?: string }[];
   };
 }
 export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction }) => {
@@ -52,18 +52,23 @@ export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction 
           <div
             // @ts-ignore
             options={{ max: 45, scale: 1, speed: 450 }}
-            className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col cursor-pointer'
+            className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-between items-center flex-col cursor-pointer'
           >
             <ul>
               {ul.ready.map((li) => (
-                <li key={li} className='list-disc text-white my-1 text-lg font-bold'>
-                  {li}
+                <li
+                  key={li.name}
+                  className='text-white my-2 text-lg flex items-center gap-3 font-bold'
+                >
+                  {li.icon && <Image src={li.icon} width={30} alt={li.alt || ''} className={li.bg ? `bg-[${li.bg}] p-1` : ''} />}
+                  <span>{li.name}</span>
                 </li>
               ))}
-              {ul.incoming && <div className='mt-6 mb-3 text-xl my-1'>In progress</div>}
+              {ul.incoming && <div className='mt-6 mb-3 text-xl my-'>In progress</div>}
               {ul.incoming?.map((li) => (
-                <li key={li} className='list-disc text-white text-lg font-bold'>
-                  {li}
+                <li key={li.name} className='text-white text-lg font-bold my-2 flex gap-2'>
+                  {li.icon && <Image src={li.icon} width={24} alt={li.alt || ''} />}
+                  <span>{li.name}</span>
                 </li>
               ))}
             </ul>
