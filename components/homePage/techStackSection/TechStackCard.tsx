@@ -61,7 +61,7 @@ export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction 
                       src={li.icon}
                       width={30}
                       alt={li.alt || ''}
-                      className={li.bg ? `bg-${li.bg} p-1` : ''}
+                      className={li.bg ? `bg-white p-1` : ''}
                     />
                   )}
                   <span>{li.name}</span>
