@@ -1,19 +1,12 @@
 'use client';
+import { FC } from 'react';
 import Image from 'next/image';
 import 'react-vertical-timeline-component/style.min.css';
-import React, { FC } from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { IExperienceElement } from '@/interfaces/IHomePage';
 
 interface Props {
-  experience: {
-    title: string;
-    company_name: string;
-    certification_url?: string;
-    icon: any;
-    iconBg: string;
-    date: string;
-    points: string[];
-  };
+  experience: IExperienceElement;
 }
 
 export const ExperienceCard: FC<Props> = ({ experience }) => {

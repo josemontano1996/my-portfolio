@@ -1,18 +1,18 @@
 'use client';
+import { useContext } from 'react';
+import { motion } from 'framer-motion';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 
-import AnimatedWrapper from '../../Wrappers/AnimatedWrapper';
-import { motion } from 'framer-motion';
-import { textVariant } from '../../../utils/motion';
-import { ExperienceCard } from './ExperienceCard';
-import { useContext } from 'react';
 import { UIContext } from '@/context/ui/UIContext';
 import loadTranslations from '@/utils/loadTranslations';
+import AnimatedWrapper from '../../Wrappers/AnimatedWrapper';
+import { textVariant } from '../../../utils/motion';
+import { ExperienceCard } from './ExperienceCard';
+import { IExperienceSection } from '@/interfaces/IHomePage';
 
 const Experience = () => {
-  
   const { lang } = useContext(UIContext);
-  const t = loadTranslations(lang).homePage.experienceSection;
+  const t = loadTranslations(lang).homePage.experienceSection as IExperienceSection;
   return (
     <section id='experience' className='mx-auto relative z-0 max-w-[85vw]'>
       <AnimatedWrapper>

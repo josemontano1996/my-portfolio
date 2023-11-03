@@ -1,11 +1,12 @@
-import loadTranslations from '@/utils/loadTranslations';
 import { FC } from 'react';
+import { IAboutSection } from '@/interfaces/IHomePage';
+import loadTranslations from '@/utils/loadTranslations';
 
 interface Props {
   locale: string;
 }
 const About: FC<Props> = ({ locale }) => {
-  const t = loadTranslations(locale).homePage.aboutSection;
+  const t = loadTranslations(locale).homePage.aboutSection as IAboutSection;
   return (
     <section id='about' className='max-w-[85vw] mx-auto'>
       <div className='flex flex-row items-start gap-5'>

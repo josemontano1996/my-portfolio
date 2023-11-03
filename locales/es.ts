@@ -1,3 +1,5 @@
+import { IHomePage } from '@/interfaces/IHomePage';
+import { IContactPopUp, INavBar } from '@/interfaces/IShared';
 import {
   PEP,
   backend,
@@ -30,7 +32,7 @@ import {
   web,
 } from '@/public/images';
 
-export const homePage = {
+export const homePage: IHomePage = {
   metadata: {
     title: 'jm3 - Portfolio Desarrollador Web Full Stack',
     description: `¡Bienvenido a mi porfolio! Soy un programador full stack especializado 
@@ -46,7 +48,7 @@ export const homePage = {
       type: 'website',
       image:
         'https://res.cloudinary.com/dfupfbnez/image/upload/v1699010770/portfolioweb_h5atzn.png',
-      url: process.env.NEXT_PUBLIC_WEB_URL,
+      url: process.env.NEXT_PUBLIC_WEB_URL || '',
     },
   },
   heroSection: {
@@ -402,13 +404,13 @@ export const homePage = {
   },
 };
 
-export const navBar = {
+export const navBar: INavBar = {
   about: 'Sobre mi',
   experience: 'Experiencia',
   contact: 'Contacto',
 };
 
-export const contactPopUp = {
+export const contactPopUp: IContactPopUp = {
   upperTitle: 'PONTE EN CONTACTO',
   callToAction: 'Mi cuenta de Linkedin',
   title: 'Contacto.',

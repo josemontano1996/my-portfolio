@@ -1,15 +1,16 @@
 'use client';
 
 import { useContext, useState } from 'react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { UIContext } from '@/context/ui/UIContext';
+import AnimatedWrapper from '../Wrappers/AnimatedWrapper';
 import { close } from '@/public/images';
 import StarsCanvas from '../canvas/Stars';
-import AnimatedWrapper from '../Wrappers/AnimatedWrapper';
 import { textVariant } from '../../utils/motion';
 import loadTranslations from '@/utils/loadTranslations';
+import { IContactPopUp } from '@/interfaces/IShared';
 
 interface Form {
   name: string;
@@ -19,7 +20,7 @@ interface Form {
 
 const Contact = () => {
   const { lang, isContactPopUpOpen, toggleContactPopUp } = useContext(UIContext);
-  const t = loadTranslations(lang).contactPopUp;
+  const t = loadTranslations(lang).contactPopUp as IContactPopUp;
 
   const [form, setForm] = useState<Form>({
     name: '',

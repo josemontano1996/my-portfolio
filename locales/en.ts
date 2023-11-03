@@ -1,3 +1,5 @@
+import { INavBar, IContactPopUp } from '@/interfaces/IShared';
+import { IHomePage } from '../interfaces/IHomePage';
 import {
   PEP,
   backend,
@@ -30,7 +32,7 @@ import {
   web,
 } from '@/public/images';
 
-export const homePage = {
+export const homePage: IHomePage = {
   metadata: {
     title: 'jm3 - Full Stack Web Developer Portfolio',
     description: `Welcome to my portfolio! I'm a full stack developer specializing 
@@ -46,7 +48,7 @@ export const homePage = {
       type: 'website',
       image:
         'https://res.cloudinary.com/dfupfbnez/image/upload/v1699010770/portfolioweb_h5atzn.png',
-      url: process.env.NEXT_PUBLIC_WEB_URL,
+      url: process.env.NEXT_PUBLIC_WEB_URL || '',
     },
   },
 
@@ -405,13 +407,13 @@ export const homePage = {
   },
 };
 
-export const navBar = {
+export const navBar: INavBar = {
   about: 'About',
   experience: 'Experience',
   contact: 'Contact',
 };
 
-export const contactPopUp = {
+export const contactPopUp: IContactPopUp = {
   upperTitle: 'GET IN TOUCH',
   callToAction: 'My Linkedin Account',
   title: 'Contact.',

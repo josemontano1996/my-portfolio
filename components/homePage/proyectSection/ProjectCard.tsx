@@ -1,19 +1,11 @@
 import { motion } from 'framer-motion';
 import { FC } from 'react';
-import { fadeIn } from '../../../utils/motion';
-
 import Image from 'next/image';
 
-interface Props {
-  index: number;
-  name: string;
-  description: string;
-  tags: { name: string; color: string }[];
-  image: any;
-  source_code_link: string;
-  webpage_link: string;
-}
-export const ProjectCard: FC<Props> = ({
+import { fadeIn } from '../../../utils/motion';
+import { IProjectElement } from '@/interfaces/IHomePage';
+
+export const ProjectCard: FC<IProjectElement> = ({
   index,
   name,
   description,

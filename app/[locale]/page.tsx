@@ -6,9 +6,10 @@ import Tech from '@/components/homePage/techStackSection/TechStack';
 import Hero from '@/components/homePage/heroSection/Hero';
 import Experience from '@/components/homePage/experienceSection/Experience';
 import ProjectsSection from '@/components/homePage/proyectSection/ProjectsSection';
+import { IMetadada } from '@/interfaces/IHomePage';
 
 export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
-  const t = loadTranslations(locale).homePage.metadata;
+  const t = loadTranslations(locale).homePage.metadata as IMetadada;
   return {
     title: t.title,
     description: t.description,

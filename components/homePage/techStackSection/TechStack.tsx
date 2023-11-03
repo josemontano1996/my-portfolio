@@ -1,15 +1,16 @@
 'use client';
+import { useContext } from 'react';
 import { motion } from 'framer-motion';
+import AnimatedWrapper from '../../Wrappers/AnimatedWrapper';
+import loadTranslations from '@/utils/loadTranslations';
 import { UIContext } from '@/context/ui/UIContext';
 import { fadeIn, textVariant } from '@/utils/motion';
 import { TechStackCart } from './TechStackCard';
-import AnimatedWrapper from '../../Wrappers/AnimatedWrapper';
-import { useContext } from 'react';
-import loadTranslations from '@/utils/loadTranslations';
+import { ITechSection } from '@/interfaces/IHomePage';
 
 const Tech = () => {
   const { lang } = useContext(UIContext);
-  const t = loadTranslations(lang).homePage.techSection;
+  const t = loadTranslations(lang).homePage.techSection as ITechSection;
   return (
     <section className='my-14'>
       <AnimatedWrapper>

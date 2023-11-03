@@ -1,18 +1,14 @@
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import { FC, useState } from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/utils/motion';
 
-interface Props {
+import { ITechElement } from '../../../interfaces/IHomePage';
+
+interface Props extends ITechElement {
   index: number;
-  title: string;
-  icon: StaticImageData;
   callToAction: string;
-  ul: {
-    ready: { name: string; icon?: any; alt?: string; bg?: string }[];
-    incoming?: { name: string; icon?: any; alt?: string; bg?: string }[];
-  };
 }
 export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,7 +56,14 @@ export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction 
                   key={li.name}
                   className='text-white my-2 text-lg flex items-center gap-3 font-bold'
                 >
-                  {li.icon && <Image src={li.icon} width={30} alt={li.alt || ''} className={li.bg ? `bg-[${li.bg}] p-1` : ''} />}
+                  {li.icon && (
+                    <Image
+                      src={li.icon}
+                      width={30}
+                      alt={li.alt || ''}
+                      className={li.bg ? `bg-[${li.bg}] p-1` : ''}
+                    />
+                  )}
                   <span>{li.name}</span>
                 </li>
               ))}

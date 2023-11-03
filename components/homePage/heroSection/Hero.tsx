@@ -1,15 +1,16 @@
+import { FC } from 'react';
 import EarthCanvas from '@/components/canvas/Earth';
 import StarsCanvas from '@/components/canvas/Stars';
-import { HeroCalltoActionButton } from './HeroCalltoActionButton';
 import loadTranslations from '@/utils/loadTranslations';
-import { FC } from 'react';
+import { HeroCalltoActionButton } from './HeroCalltoActionButton';
+import { IHeroSection } from '@/interfaces/IHomePage';
 
 interface Props {
   locale: string;
 }
 
 const Hero:FC<Props> = ({ locale }) => {
-  const t = loadTranslations(locale).homePage.heroSection;
+  const t = loadTranslations(locale).homePage.heroSection as IHeroSection;
   return (
     <section className='min-h-[70vh]'>
       <div className='flex relative justify-between flex-col lg:flex-row '>

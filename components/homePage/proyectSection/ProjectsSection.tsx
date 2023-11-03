@@ -1,16 +1,19 @@
 'use client';
 
-import AnimatedWrapper from '@/components/Wrappers/AnimatedWrapper';
-import { textVariant } from '@/utils/motion';
-import { motion } from 'framer-motion';
-import { ProjectCard } from './ProjectCard';
 import { useContext } from 'react';
+import { motion } from 'framer-motion';
+import AnimatedWrapper from '@/components/Wrappers/AnimatedWrapper';
 import { UIContext } from '@/context/ui/UIContext';
+import { textVariant } from '@/utils/motion';
 import loadTranslations from '@/utils/loadTranslations';
+import { ProjectCard } from './ProjectCard';
+import { IProjectsSection } from '@/interfaces/IHomePage';
 
 const ProyectsSection = () => {
+  
   const { lang } = useContext(UIContext);
-  const t = loadTranslations(lang).homePage.projectsSection;
+  const t = loadTranslations(lang).homePage.projectsSection as IProjectsSection;
+
   return (
     <section className='my-10 '>
       <AnimatedWrapper>
@@ -39,9 +42,9 @@ const ProyectsSection = () => {
             {t.inProgressTitle}
           </h4>
           <div className='mt-8 flex flex-wrap xl:grid xl:grid-cols-3 gap-7'>
-            {t.inprogress.map((project, index) => (
+            {t.inprogress?.map((project, index) => (
               // eslint-disable-next-line react/jsx-no-undef
-              <ProjectCard key={index} index={index} {...project} />
+              <ProjectCard key={index} {...project} />
             ))}
           </div>
         </div>
@@ -52,7 +55,7 @@ const ProyectsSection = () => {
           <div className='mt-8 flex flex-wrap gap-7'>
             {t.projects.map((project, index) => (
               // eslint-disable-next-line react/jsx-no-undef
-              <ProjectCard key={index} index={index} {...project} />
+              <ProjectCard key={index} {...project} />
             ))}
           </div>
         </div>
