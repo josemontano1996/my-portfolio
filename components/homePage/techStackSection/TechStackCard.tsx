@@ -61,7 +61,7 @@ export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction 
                       src={li.icon}
                       width={30}
                       alt={li.alt || ''}
-                      className={li.bg ? `bg-[${li.bg}] p-1` : ''}
+                      className={li.bg ? `bg-${li.bg} p-1` : ''}
                     />
                   )}
                   <span>{li.name}</span>
@@ -70,7 +70,14 @@ export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction 
               {ul.incoming && <div className='mt-6 mb-3 text-xl my-'>In progress</div>}
               {ul.incoming?.map((li) => (
                 <li key={li.name} className='text-white text-lg font-bold my-2 flex gap-2'>
-                  {li.icon && <Image src={li.icon} width={24} alt={li.alt || ''} />}
+                  {li.icon && (
+                    <Image
+                      src={li.icon}
+                      width={30}
+                      alt={li.alt || ''}
+                      className={li.bg ? `bg-[${li.bg}] p-1` : ''}
+                    />
+                  )}
                   <span>{li.name}</span>
                 </li>
               ))}

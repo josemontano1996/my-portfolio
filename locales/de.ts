@@ -112,11 +112,11 @@ export const homePage: IHomePage = {
         icon: creator,
         ul: {
           ready: [
-            { name: 'Next.js', icon: nextjs, alt: 'Next js', bg: '#fff' },
-            { name: 'Express.js', icon: expressjs, alt: 'Express js', bg: '#fff' },
+            { name: 'Next.js', icon: nextjs, alt: 'Next js', bg: 'white' },
+            { name: 'Express.js', icon: expressjs, alt: 'Express js', bg: 'white' },
             { name: 'Node.js', icon: nodejs, alt: 'Node js' },
-            { name: 'REST APIs', icon: restapi, alt: 'Rest API', bg: '#fff' },
-            { name: 'MVC', icon: sql, alt: 'MVC', bg: '#fff' },
+            { name: 'REST APIs', icon: restapi, alt: 'Rest API', bg: 'white' },
+            { name: 'MVC', icon: sql, alt: 'MVC', bg: 'white' },
           ],
         },
       },

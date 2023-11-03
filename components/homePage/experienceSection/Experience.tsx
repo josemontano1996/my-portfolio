@@ -25,7 +25,7 @@ const Experience = () => {
           </h2>
         </motion.div>
       </AnimatedWrapper>
-      <AnimatedWrapper>
+      
         <div className='mt-20 flex flex-col'>
           <VerticalTimeline>
             {t.experiences.map((experience, index) => (
@@ -33,7 +33,7 @@ const Experience = () => {
             ))}
           </VerticalTimeline>
         </div>
-      </AnimatedWrapper>
+   
     </section>
   );
 };

@@ -6,10 +6,13 @@ import { UIContext } from '@/context/ui/UIContext';
 import { onAnchorNavigation } from '@/utils/onAnchorNavigation';
 import { LanguageChanger } from './languageChanger';
 import { menu, close } from '@/public/images';
+import loadTranslations from '@/utils/loadTranslations';
 
 export const MobileRightMenu = () => {
-  const { isContactPopUpOpen, isSideMenuOpen, toggleSideMenu, toggleContactPopUp } =
+  const { lang, isContactPopUpOpen, isSideMenuOpen, toggleSideMenu, toggleContactPopUp } =
     useContext(UIContext);
+
+  const t = loadTranslations(lang).navBar;
 
   return (
     <div className='sm:hidden flex flex-1 justify-end relative items-center'>
@@ -37,7 +40,7 @@ export const MobileRightMenu = () => {
                 onAnchorNavigation(event);
               }}
             >
-              About
+              {t.about}
             </a>
           </li>
           <li
@@ -52,7 +55,7 @@ export const MobileRightMenu = () => {
                 onAnchorNavigation(event);
               }}
             >
-              Experience
+              {t.experience}
             </a>
           </li>
           <li
@@ -65,7 +68,7 @@ export const MobileRightMenu = () => {
                 toggleContactPopUp();
               }}
             >
-              Contact
+              {t.contact}
             </button>
           </li>
           <li className='mx-auto'>

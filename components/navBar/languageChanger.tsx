@@ -7,13 +7,13 @@ import { useContext } from 'react';
 import { UIContext } from '@/context/ui/UIContext';
 
 export const LanguageChanger = () => {
-  const { lang } = useContext(UIContext);
+  const { lang, toggleSideMenu } = useContext(UIContext);
   const router = useRouter();
   const currentPathname = usePathname();
 
   const handleChange = (e: any) => {
     const newLocale = e.target.value;
-
+    toggleSideMenu();
     // set cookie for next-i18n-router
     const days = 30;
     const date = new Date();
