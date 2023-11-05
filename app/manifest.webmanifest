@@ -1,0 +1,14 @@
+{
+  "name": "jm3 Full Stack Web Development Website",
+  "short_name": "jm3 WebDev",
+  "description": "Website from jm3 web developer, full stack developer using technologies such as React, Next.js, Mongo DB and more.",
+  "start_url": "/",
+  "icons": [
+    { "src": "/icon1.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon2.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/apple-icon.png", "sizes": "192x192", "type": "image/png" }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#050816",
+  "display": "standalone"
+}

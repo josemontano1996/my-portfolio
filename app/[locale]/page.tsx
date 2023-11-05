@@ -13,6 +13,14 @@ import Footer from '@/components/homePage/Footer';
 export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
   const t = loadTranslations(locale).homePage.metadata as IMetadada;
   return {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_WEB_URL || ''),
+    alternates: {
+      canonical: '/en',
+      languages: {
+        es: '/es',
+        de: '/de',
+      },
+    },
     title: t.title,
     description: t.description,
     keywords: t.keyword,
