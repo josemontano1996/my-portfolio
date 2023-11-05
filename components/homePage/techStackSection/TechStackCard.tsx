@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { FC, useState } from 'react';
 import Tilt from 'react-parallax-tilt';
@@ -10,7 +12,7 @@ interface Props extends ITechElement {
   index: number;
   callToAction: string;
 }
-export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction }) => {
+export const TechStackCard: FC<Props> = ({ index, title, ul, icon, callToAction }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

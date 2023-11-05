@@ -5,7 +5,7 @@ import AnimatedWrapper from '../../Wrappers/AnimatedWrapper';
 import loadTranslations from '@/utils/loadTranslations';
 import { UIContext } from '@/context/ui/UIContext';
 import { fadeIn, textVariant } from '@/utils/motion';
-import { TechStackCart } from './TechStackCard';
+import { TechStackCard } from './TechStackCard';
 import { ITechSection } from '@/interfaces/IHomePage';
 
 const Tech = () => {
@@ -27,7 +27,12 @@ const Tech = () => {
         </motion.div>
         <div className='mt-10 flex flex-wrap gap-10'>
           {t.cards.map((card, index) => (
-            <TechStackCart key={card.title} callToAction={t.callToAction} index={index} {...card} />
+            <TechStackCard
+              key={card.title}
+              callToAction={t.callToAction}
+              index={index}
+              {...card}
+            />
           ))}
         </div>
       </AnimatedWrapper>
