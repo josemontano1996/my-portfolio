@@ -14,7 +14,7 @@ export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction 
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Tilt glareEnable={true} gyroscope={true} className='xs:w-[230px] w-screen mx-auto'>
+    <Tilt glareEnable={true} className='xs:w-[230px] w-screen mx-auto'>
       {!isOpen ? (
         <motion.div
           className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer'
