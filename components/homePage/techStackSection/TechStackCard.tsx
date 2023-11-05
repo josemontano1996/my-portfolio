@@ -19,7 +19,7 @@ export const TechStackCard: FC<Props> = ({ index, title, ul, icon, callToAction 
     <Tilt glareEnable={true} className='xs:w-[230px] w-screen mx-auto'>
       {!isOpen ? (
         <motion.div
-          className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer'
+          className='w-full  green-pink-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer'
           variants={fadeIn('', 'spring', 0.3 * index, 1)}
           onClick={() => {
             setIsOpen(!isOpen);
@@ -28,7 +28,7 @@ export const TechStackCard: FC<Props> = ({ index, title, ul, icon, callToAction 
           <div
             // @ts-ignore
             options={{ max: 45, scale: 1, speed: 450 }}
-            className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+            className='bg-tertiary h-[300px] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
           >
             <Image src={icon} alt={`${title} icon`} className='w-16 h-16 object-contain ' />
             <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
@@ -37,7 +37,7 @@ export const TechStackCard: FC<Props> = ({ index, title, ul, icon, callToAction 
         </motion.div>
       ) : (
         <motion.div
-          className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+          className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card '
           variants={fadeIn('', 'spring', 0.3 * index, 1)}
           onClick={() => {
             setIsOpen(!isOpen);
@@ -46,9 +46,9 @@ export const TechStackCard: FC<Props> = ({ index, title, ul, icon, callToAction 
           <div
             // @ts-ignore
             options={{ max: 45, scale: 1, speed: 450 }}
-            className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-between items-center flex-col cursor-pointer'
+            className='bg-tertiary h-[300px] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-between items-center flex-col cursor-pointer'
           >
-            <ul>
+            <ul className='my-auto'>
               {ul.ready.map((li) => (
                 <li
                   key={li.name}
