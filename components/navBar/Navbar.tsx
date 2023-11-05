@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <header className='z-20 fixed top-0 py-2 h-[10vh] px-6 w-full left-0 bg-primary'>
-      <nav className='  flex items-center'>
+      <nav className=' flex items-center'>
         <div className='w-full flex justify-between items-center max-w-8xl mx-auto'>
           <Link
             href={`/${lang}`}

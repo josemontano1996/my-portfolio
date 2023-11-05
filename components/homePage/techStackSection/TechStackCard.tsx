@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FC, useState } from 'react';
-import { Tilt } from 'react-tilt';
+import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/utils/motion';
 
@@ -14,7 +14,7 @@ export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction 
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Tilt className='xs:w-[250px] w-full mx-auto'>
+    <Tilt glareEnable={true} gyroscope={true} className='xs:w-[230px] w-screen mx-auto'>
       {!isOpen ? (
         <motion.div
           className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer'
@@ -36,11 +36,7 @@ export const TechStackCart: FC<Props> = ({ index, title, ul, icon, callToAction 
       ) : (
         <motion.div
           className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-          animate={{
-            scale: [1, 2, 2, 1, 1],
-            rotate: [0, 0, 270, 270, 0],
-            opacity: [0, 1],
-          }}
+          variants={fadeIn('', 'spring', 0.3 * index, 1)}
           onClick={() => {
             setIsOpen(!isOpen);
           }}

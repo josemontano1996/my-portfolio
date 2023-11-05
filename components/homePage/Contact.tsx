@@ -159,12 +159,13 @@ const Contact = () => {
               <label className='flex flex-col'>
                 <span className='text-white font-medium mb-4'>{t.message}</span>
                 <textarea
-                  rows={7}
+                  rows={5}
+  
                   name='message'
                   value={form.message}
                   onChange={handleChange}
                   placeholder={t.messageLabel}
-                  className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                  className='bg-tertiary py-4 resize-none overflow-y-auto px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                 />
               </label>
 

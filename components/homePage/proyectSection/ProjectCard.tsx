@@ -1,16 +1,11 @@
-import { motion } from 'framer-motion';
 import { FC } from 'react';
 import Image from 'next/image';
-
-import { fadeIn } from '../../../utils/motion';
 import { IProjectElement } from '@/interfaces/IHomePage';
 
 interface Props extends IProjectElement {
   index: number;
 }
-
 export const ProjectCard: FC<Props> = ({
-  index,
   name,
   description,
   tags,
@@ -19,8 +14,7 @@ export const ProjectCard: FC<Props> = ({
   webpage_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.2, 0.75)} className='mx-auto'>
-      <div className='bg-tertiary relative p-5 rounded-2xl sm:w-[360px] min-h-[550px] flex flex-col'>
+      <div className='bg-tertiary relative p-5 rounded-2xl sm:w-[360px] min-h-[550px] flex flex-col mx-auto'>
         <div className='relative w-full h-[230px]'>
           <Image
             src={image}
@@ -95,6 +89,6 @@ export const ProjectCard: FC<Props> = ({
           ))}
         </div>
       </div>
-    </motion.div>
+   
   );
 };
