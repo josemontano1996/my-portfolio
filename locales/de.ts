@@ -8,6 +8,7 @@ import {
   chefWebpage,
   creator,
   css,
+  discordproject,
   expressjs,
   java,
   javascript,
@@ -335,8 +336,60 @@ export const homePage: IHomePage = {
     ],
     inprogress: [
       {
+        name: 'Discord Clone',
+        description: `In Entwicklung: Dieses Projekt befindet sich derzeit in einem frühen Stadium. 
+        Das Ziel ist es, einen vollständig funktionsfähigen Discord-Klon zu erstellen`,
+        tags: [
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Zustand',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Clerk',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Prisma',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'MySQL',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Shadcn',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: discordproject,
+        webpage_link: '',
+        source_code_link: 'https://github.com/josemontano1996/discord-clone',
+      },
+      {
         name: 'PEP Website',
-        description: `Entwicklung der PEP.e.V-Webseite, derzeit in Arbeit.`,
+        description: `In Entwicklung: Erstellung einer brandneuen Website, die es Spendern ermöglicht, 
+        Geld über die Website zu spenden, 
+        mit Internationalisierung in drei Sprachen und den besten SEO-Praktiken.`,
         tags: [
           {
             name: 'Fully-Responsive',
@@ -349,6 +402,14 @@ export const homePage: IHomePage = {
           {
             name: 'Next.js',
             color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC React',
+            color: 'pink-text-gradient',
           },
           {
             name: 'Stripe Payments',
@@ -367,8 +428,8 @@ export const homePage: IHomePage = {
       },
       {
         name: 'Chef Website',
-        description: `Private Chef Full-Stack-Webseite, die für Essenslieferungen 
-        und Veranstaltungsmanagement verwendet wird.`,
+        description: `In Entwicklung: Private Chef Full-Stack-Webseite, die für 
+        die Lebensmittelzustellung und das Veranstaltungsmanagement verwendet wird.`,
         tags: [
           {
             name: 'Fully-Responsive',
@@ -381,6 +442,14 @@ export const homePage: IHomePage = {
           {
             name: 'Next.js',
             color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC React',
+            color: 'pink-text-gradient',
           },
           {
             name: 'Stripe Payments',

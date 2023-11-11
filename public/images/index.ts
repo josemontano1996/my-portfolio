@@ -6,6 +6,7 @@ import menu from './menu.svg';
 import linkImg from './link.png';
 import close from './close.svg';
 import udemy from './experience/udemypng.png';
+
 import nebrija from './experience/nebrija.webp';
 import PEP from './experience/PEP.jpg';
 import tesloShop from './projects/tesloshop.png';
@@ -13,6 +14,8 @@ import calendarApp from './projects/calendarApp.png';
 import portfolioWeb from './projects/portfolioweb.png';
 import pepWebpage from './projects/pepwebpage.png';
 import chefWebpage from './projects/chefwepage.png';
+import discordproject from './projects/discordClone.png';
+
 import javascript from './tech/javascript.png';
 import typescript from './tech/typescript.png';
 import java from './tech/java.png';
@@ -32,6 +35,7 @@ import sql from './tech/sql.png';
 import mysql from './tech/mysql.png';
 
 export {
+  discordproject,
   mysql,
   sql,
   mongodb,

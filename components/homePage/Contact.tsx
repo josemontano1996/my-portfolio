@@ -87,7 +87,7 @@ const Contact = () => {
         <AnimatedWrapper>
           <motion.div
             variants={textVariant(0.1)}
-            className='bg-black-100 p-8 mt-[10vh] mx-auto lg:max-h-[80vh] relative rounded-2xl lg:max-w-[800px]'
+            className='bg-black-100 p-8 mt-[10vh] mx-auto lg:max-h-[80vh] min-h-[570px] relative rounded-2xl lg:max-w-[800px]'
           >
             <Image
               src={close}

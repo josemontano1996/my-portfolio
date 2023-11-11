@@ -8,6 +8,7 @@ import {
   chefWebpage,
   creator,
   css,
+  discordproject,
   expressjs,
   java,
   javascript,
@@ -338,8 +339,60 @@ export const homePage: IHomePage = {
     ],
     inprogress: [
       {
+        name: 'Discord Clone',
+        description: `In development: this proyect is currently in a early stage, the goal is 
+        to create a completely functional discord clone.`,
+        tags: [
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Zustand',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Clerk',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Prisma',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'MySQL',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Shadcn',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: discordproject,
+        webpage_link: '',
+        source_code_link: 'https://github.com/josemontano1996/discord-clone',
+      },
+      {
         name: 'PEP Website',
-        description: `PEP .e.V webpage development, currently in progress.`,
+        description: `In development: Creating a brand-new website that allows donors to donate money throught the website,
+        with internationalization in 3 languages and
+        best SEO practices`,
         tags: [
           {
             name: 'Fully-Responsive',
@@ -352,6 +405,14 @@ export const homePage: IHomePage = {
           {
             name: 'Next.js',
             color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC React',
+            color: 'pink-text-gradient',
           },
           {
             name: 'Stripe Payments',
@@ -372,7 +433,8 @@ export const homePage: IHomePage = {
       },
       {
         name: 'Chef Webpage',
-        description: `Private Chef Full-Stack webpage that will be used for food delivery and events management.`,
+        description: `In development: Private Chef Full-Stack webpage that will be 
+        used for food delivery and events management.`,
         tags: [
           {
             name: 'Fully-Responsive',
@@ -385,6 +447,14 @@ export const homePage: IHomePage = {
           {
             name: 'Next.js',
             color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC React',
+            color: 'pink-text-gradient',
           },
           {
             name: 'Stripe Payments',
