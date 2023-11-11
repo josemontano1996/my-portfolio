@@ -328,7 +328,7 @@ export const homePage: IHomePage = {
           },
         ],
         image: calendarApp,
-        webpage_link: 'https://thriving-moonbeam-22f2bd.netlify.app/',
+        webpage_link: 'https://react-calendar-app-iota.vercel.app',
         source_code_link: 'https://github.com/josemontano1996/react-calendar-app',
       },
     ],
