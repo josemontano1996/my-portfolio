@@ -14,7 +14,7 @@ import calendarApp from './projects/calendarApp.png';
 import portfolioWeb from './projects/portfolioweb.png';
 import pepWebpage from './projects/pepwebpage.png';
 import chefWebpage from './projects/chefwepage.png';
-import discordproject from './projects/discordClone.png';
+import discordproject from './projects/discord-clone.png';
 
 import javascript from './tech/javascript.png';
 import typescript from './tech/typescript.png';
