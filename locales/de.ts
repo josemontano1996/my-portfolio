@@ -425,6 +425,8 @@ export const homePage: IHomePage = {
           },
         ],
         image: pepWebpage,
+        webpage_link: '',
+        source_code_link: '',
       },
       {
         name: 'Chef Website',
@@ -465,6 +467,8 @@ export const homePage: IHomePage = {
           },
         ],
         image: chefWebpage,
+        webpage_link: '',
+        source_code_link: 'https://github.com/josemontano1996/nextjs13-ingrid-webpage',
       },
     ],
   },
