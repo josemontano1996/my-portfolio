@@ -338,7 +338,7 @@ export const homePage: IHomePage = {
       },
     ],
     inprogress: [
-      {
+      /* {
         name: 'Discord Clone',
         description: `In development: this proyect is currently in a early stage, the goal is 
         to create a completely functional discord clone.`,
@@ -387,6 +387,48 @@ export const homePage: IHomePage = {
         image: discordproject,
         webpage_link: '',
         source_code_link: 'https://github.com/josemontano1996/discord-clone',
+      }, */
+      {
+        name: 'Chef Webpage',
+        description: `In development: Private Chef Full-Stack webpage that will be 
+        used for food delivery and events management.`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Redux',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: chefWebpage,
+        webpage_link: '',
+        source_code_link: 'https://github.com/josemontano1996/nextjs13-ingrid-webpage',
       },
       {
         name: 'PEP Website',
@@ -411,7 +453,7 @@ export const homePage: IHomePage = {
             color: 'pink-text-gradient',
           },
           {
-            name: 'RSC React',
+            name: 'RSC',
             color: 'pink-text-gradient',
           },
           {
@@ -430,48 +472,6 @@ export const homePage: IHomePage = {
         image: pepWebpage,
         webpage_link: '',
         source_code_link: '',
-      },
-      {
-        name: 'Chef Webpage',
-        description: `In development: Private Chef Full-Stack webpage that will be 
-        used for food delivery and events management.`,
-        tags: [
-          {
-            name: 'Fully-Responsive',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'RSC React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'Stripe Payments',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'React i18next',
-            color: 'pink-text-gradient',
-          },
-        ],
-        image: chefWebpage,
-        webpage_link: '',
-        source_code_link: 'https://github.com/josemontano1996/nextjs13-ingrid-webpage',
       },
     ],
   },
