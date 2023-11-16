@@ -24,6 +24,16 @@ const ProyectsSection = () => {
           </h2>
         </motion.div>
       </AnimatedWrapper>
+      <div className='my-8'>
+        <h4 className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'>
+          {t.finishedProyectsTitle}
+        </h4>
+        <div className='mt-8 flex flex-wrap gap-7'>
+          {t.projects.map((project, index) => (
+            // eslint-disable-next-line react/jsx-no-undef
+            <ProjectCard key={index} index={index} {...project} />
+          ))}
+        </div>
         <div className='my-8'>
           <h4 className='sm:text-[18px]  text-[14px] text-secondary uppercase tracking-wider'>
             {t.inProgressTitle}
@@ -35,18 +45,7 @@ const ProyectsSection = () => {
             ))}
           </div>
         </div>
-        <div>
-          <h4 className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'>
-            {t.finishedProyectsTitle}
-          </h4>
-          <div className='mt-8 flex flex-wrap gap-7'>
-            {t.projects.map((project, index) => (
-              // eslint-disable-next-line react/jsx-no-undef
-              <ProjectCard key={index} index={index} {...project} />
-            ))}
-          </div>
-        </div>
-     
+      </div>
     </section>
   );
 };
