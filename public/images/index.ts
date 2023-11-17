@@ -15,7 +15,7 @@ import portfolioWeb from './projects/portfolioweb.png';
 import pepWebpage from './projects/pepwebpage.png';
 import chefWebpage from './projects/chefwepage.png';
 import discordproject from './projects/discord-clone.png';
-import teslaLanding from './projects/teslaLanding.png';
+import teslaLanding from './projects/tesla-landing.png';
 
 import javascript from './tech/javascript.png';
 import typescript from './tech/typescript.png';
