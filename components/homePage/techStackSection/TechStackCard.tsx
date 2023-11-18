@@ -56,6 +56,7 @@ export const TechStackCard: FC<Props> = ({ index, title, ul, icon, callToAction 
                 >
                   {li.icon && (
                     <Image
+                      loading='eager'
                       src={li.icon}
                       width={30}
                       alt={li.alt || ''}
@@ -70,6 +71,7 @@ export const TechStackCard: FC<Props> = ({ index, title, ul, icon, callToAction 
                 <li key={li.name} className='text-white text-lg font-bold my-2 flex gap-2'>
                   {li.icon && (
                     <Image
+                      loading='eager'
                       src={li.icon}
                       width={30}
                       alt={li.alt || ''}
