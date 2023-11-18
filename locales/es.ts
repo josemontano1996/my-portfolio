@@ -389,10 +389,10 @@ export const homePage: IHomePage = {
         name: 'Tesla landing page',
         description: `En desarrollo: Replica de la landing page oficial de Tesla.`,
         tags: [
-          /* {
-            name: 'Fully-Responsive',
+           {
+            name: 'Desktop',
             color: 'pink-text-gradient',
-          }, */
+          }, 
           {
             name: 'TypeScript',
             color: 'blue-text-gradient',
