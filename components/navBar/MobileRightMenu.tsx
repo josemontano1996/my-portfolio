@@ -59,6 +59,20 @@ export const MobileRightMenu = () => {
             </a>
           </li>
           <li
+            key={'projects2'}
+            className={`hover:text-white text-[18px] font-medium cursor-pointer  text-secondary`}
+          >
+            <a
+              href='#projects'
+              onClick={(event) => {
+                onAnchorNavigation(event);
+                isContactPopUpOpen && toggleContactPopUp();
+              }}
+            >
+              {t.projects}
+            </a>
+          </li>
+          <li
             key={'contact2'}
             className={`hover:text-white text-[16px] font-medium cursor-pointer  text-secondary`}
           >

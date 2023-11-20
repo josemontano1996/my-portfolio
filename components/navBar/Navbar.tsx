@@ -66,6 +66,20 @@ const Navbar = () => {
               </a>
             </li>
             <li
+              key={'projects'}
+              className={`hover:text-white text-[18px] font-medium cursor-pointer  text-secondary`}
+            >
+              <a
+                href='#projects'
+                onClick={(event) => {
+                  onAnchorNavigation(event);
+                  isContactPopUpOpen && toggleContactPopUp();
+                }}
+              >
+                {t.projects}
+              </a>
+            </li>
+            <li
               key={'contact'}
               className={`hover:text-white text-[18px] font-medium cursor-pointer  text-secondary`}
             >

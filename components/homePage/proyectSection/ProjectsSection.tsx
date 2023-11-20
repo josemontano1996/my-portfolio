@@ -13,7 +13,7 @@ const ProyectsSection = () => {
   const { lang } = useContext(UIContext);
   const t = loadTranslations(lang).homePage.projectsSection as IProjectsSection;
   return (
-    <section className='my-10 max-w-screen'>
+    <section id='projects' className='my-10 max-w-screen'>
       <AnimatedWrapper>
         <motion.div variants={textVariant(0.1)}>
           <h5 className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'>

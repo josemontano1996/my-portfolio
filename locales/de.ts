@@ -516,6 +516,7 @@ export const footer: IFooter = {
 export const navBar: INavBar = {
   about: 'Über mich',
   experience: 'Erfahrung',
+  projects:'Projekte',
   contact: 'Kontakt',
 };
 
