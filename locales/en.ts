@@ -249,6 +249,39 @@ export const homePage: IHomePage = {
     finishedProyectsTitle: 'Finished',
     projects: [
       {
+        name: 'Tesla landing page',
+        description: `In development: Replica of the Tesla official landing page.`,
+        tags: [
+          {
+            name: 'Desktop',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+        ],
+        image: teslaLanding,
+        webpage_link: 'https://peaceful-paletas-a104e7.netlify.app/',
+        source_code_link: 'https://github.com/josemontano1996/tesla-landing-clone',
+      },
+      {
         name: 'Portfolio Webpage',
         description: `This page you are navigating through. It comes with best SEO practices, internationalization in 3 languages, SSGs and the
         new App Router.`,
@@ -399,39 +432,7 @@ export const homePage: IHomePage = {
         webpage_link: '',
         source_code_link: 'https://github.com/josemontano1996/discord-clone',
       }, */
-      {
-        name: 'Tesla landing page',
-        description: `In development: Replica of the Tesla official landing page.`,
-        tags: [
-          {
-            name: 'Desktop',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'RSC',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'blue-text-gradient',
-          },
-        ],
-        image: teslaLanding,
-        webpage_link: 'https://peaceful-paletas-a104e7.netlify.app/',
-        source_code_link: 'https://github.com/josemontano1996/tesla-landing-clone',
-      },
+
       {
         name: 'Chef Webpage',
         description: `In development: Private Chef Full-Stack webpage that will be 
