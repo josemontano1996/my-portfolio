@@ -80,30 +80,16 @@ export const homePage: IHomePage = {
     callToAction: 'Haz clic en mí',
     cards: [
       {
-        title: 'Lenguajes de Programación',
-        icon: web,
-        ul: {
-          ready: [
-            { name: 'TypeScript', icon: typescript, alt: 'Typescript' },
-            { name: 'JavaScript', icon: javascript, alt: 'JavaScript' },
-          ],
-          incoming: [
-            { name: 'Java', icon: java, alt: 'Java' },
-            { name: 'PHP', icon: php, alt: 'PHP' },
-          ],
-        },
-      },
-      {
         title: 'Front-End',
         icon: mobile,
         ul: {
           ready: [
-            { name: 'React', icon: react, alt: 'React' },
-            { name: 'Css3', icon: css, alt: 'Css' },
-            { name: 'Sass', icon: sass, alt: 'Sass' },
-            { name: 'Tailwind', icon: tailwind, alt: 'Tailwind' },
-            { name: 'Bootstrap', icon: bootstrap, alt: 'Bootstrap' },
-            { name: 'Material UI', icon: mui, alt: 'Material UI' },
+            { name: 'TypeScript', icon: '/images/tech/typescript.png', alt: 'Typescript' },
+            { name: 'JavaScript', icon: '/images/tech/javascript.png', alt: 'JavaScript' },
+          ],
+          incoming: [
+            { name: 'Java', icon: '/images/tech/java.png', alt: 'Java' },
+            { name: 'PHP', icon: '/images/tech/php.png', alt: 'PHP' },
           ],
         },
       },
@@ -112,23 +98,47 @@ export const homePage: IHomePage = {
         icon: backend,
         ul: {
           ready: [
-            { name: 'Next.js', icon: nextjs, alt: 'Next js', bg: 'white' },
-            { name: 'Express.js', icon: expressjs, alt: 'Express js', bg: 'white' },
-            { name: 'Node.js', icon: nodejs, alt: 'Node js' },
-            { name: 'REST APIs', icon: restapi, alt: 'Rest API', bg: 'white' },
-            { name: 'MVC', icon: sql, alt: 'MVC', bg: 'white' },
+            { name: 'React', icon: '/images/tech/react.png', alt: 'React' },
+            { name: 'Css3', icon: '/images/tech/css.png', alt: 'Css' },
+            { name: 'Sass', icon: '/images/tech/sass.png', alt: 'Sass' },
+            { name: 'Tailwind', icon: '/images/tech/tailwind.png', alt: 'Tailwind' },
+            { name: 'Bootstrap', icon: '/images/tech/bootstrap.png', alt: 'Bootstrap' },
+            { name: 'Material UI', icon: '/images/tech/mui.png', alt: 'Material UI' },
           ],
         },
       },
       {
-        title: 'Bases de Datos',
+        title: 'Datenbanken',
         icon: creator,
         ul: {
           ready: [
-            { name: 'MongoDB', icon: mongodb, alt: 'MongoDB' },
-            { name: 'Mongoose', icon: mongodb, alt: 'Mongoose' },
+            { name: 'Next.js', icon: '/images/tech/nextjs.png', alt: 'Next js', bg: 'white' },
+            {
+              name: 'Express.js',
+              icon: '/images/tech/expressjs.png',
+              alt: 'Express js',
+              bg: 'white',
+            },
+            { name: 'Node.js', icon: '/images/tech/nodejs.png', alt: 'Node js' },
+            {
+              name: 'REST APIs',
+              icon: '/images/tech/restapi.png',
+              alt: 'Rest API',
+              bg: 'white',
+            },
+            { name: 'MVC', icon: '/images/tech/sql.png', alt: 'MVC', bg: 'white' },
           ],
-          incoming: [{ name: 'MySQL', icon: mysql, alt: 'MySQL' }],
+        },
+      },
+      {
+        title: 'Webentwickler',
+        icon: web,
+        ul: {
+          ready: [
+            { name: 'MongoDB', icon: '/images/tech/mongodb.png', alt: 'MongoDB' },
+            { name: 'Mongoose', icon: '/images/tech/mongodb.png', alt: 'Mongoose' },
+          ],
+          incoming: [{ name: 'MySQL', icon: '/images/tech/mysql.png', alt: 'MySQL' }],
         },
       },
     ],
