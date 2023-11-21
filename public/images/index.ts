@@ -15,6 +15,7 @@ import portfolioWeb from './projects/portfolioweb.png';
 import pepWebpage from './projects/pepwebpage.png';
 import chefWebpage from './projects/chefwepage.png';
 import teslaLanding from './projects/tesla-landing.png';
+
 import digitalhippo from './projects/digitalhippo.png';
 
 import javascript from './tech/javascript.png';
