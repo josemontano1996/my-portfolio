@@ -8,7 +8,7 @@ import {
   chefWebpage,
   creator,
   css,
-  digitalHippo,
+  digitalhippo,
  
   expressjs,
   java,
@@ -451,7 +451,7 @@ export const homePage: IHomePage = {
             color: 'blue-text-gradient',
           },
         ],
-        image: digitalHippo,
+        image: digitalhippo,
         webpage_link: 'https://digital-hippo-ecommerce.vercel.app/',
         source_code_link: 'https://github.com/josemontano1996/digital-hippo-ecommerce',
       },

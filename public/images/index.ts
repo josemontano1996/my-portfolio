@@ -15,7 +15,7 @@ import portfolioWeb from './projects/portfolioweb.png';
 import pepWebpage from './projects/pepwebpage.png';
 import chefWebpage from './projects/chefwepage.png';
 import teslaLanding from './projects/tesla-landing.png';
-import digitalHippo from './projects/digitalhippo.png'
+import digitalhippo from './projects/digitalhippo.png';
 
 import javascript from './tech/javascript.png';
 import typescript from './tech/typescript.png';
@@ -37,7 +37,7 @@ import mysql from './tech/mysql.png';
 
 export {
   teslaLanding,
-  digitalHippo,
+  digitalhippo,
   mysql,
   sql,
   mongodb,
