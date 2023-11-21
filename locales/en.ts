@@ -8,6 +8,7 @@ import {
   chefWebpage,
   creator,
   css,
+  digitalHippo,
   discordproject,
   expressjs,
   java,
@@ -383,57 +384,6 @@ export const homePage: IHomePage = {
     ],
     inprogress: [
       /* {
-        name: 'Discord Clone',
-        description: `In development: this proyect is currently in a early stage, the goal is 
-        to create a completely functional discord clone.`,
-        tags: [
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'RSC React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'Zustand',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Clerk',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Prisma',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'MySQL',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Shadcn',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'pink-text-gradient',
-          },
-        ],
-        image: discordproject,
-        webpage_link: '',
-        source_code_link: 'https://github.com/josemontano1996/discord-clone',
-      }, */
-
-      {
         name: 'Chef Webpage',
         description: `In development: Private Chef Full-Stack webpage that will be 
         used for food delivery and events management.`,
@@ -474,6 +424,39 @@ export const homePage: IHomePage = {
         image: chefWebpage,
         webpage_link: '',
         source_code_link: 'https://github.com/josemontano1996/nextjs13-ingrid-webpage',
+      }, */
+      {
+        name: 'Assets E-commerce',
+        description: `In development: Dummy digital assets full-stack e-commerce. Currently in development.`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+        ],
+        image: digitalHippo,
+        webpage_link: 'https://digital-hippo-ecommerce.vercel.app/',
+        source_code_link: 'https://github.com/josemontano1996/digital-hippo-ecommerce',
       },
       {
         name: 'PEP Website',

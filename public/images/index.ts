@@ -14,8 +14,8 @@ import calendarApp from './projects/calendarApp.png';
 import portfolioWeb from './projects/portfolioweb.png';
 import pepWebpage from './projects/pepwebpage.png';
 import chefWebpage from './projects/chefwepage.png';
-import discordproject from './projects/discord-clone.png';
 import teslaLanding from './projects/tesla-landing.png';
+import digitalHippo from './projects/digital-hippo.png';
 
 import javascript from './tech/javascript.png';
 import typescript from './tech/typescript.png';
@@ -37,7 +37,7 @@ import mysql from './tech/mysql.png';
 
 export {
   teslaLanding,
-  discordproject,
+ digitalHippo,
   mysql,
   sql,
   mongodb,

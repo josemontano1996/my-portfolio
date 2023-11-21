@@ -8,6 +8,7 @@ import {
   chefWebpage,
   creator,
   css,
+  digitalHippo,
   discordproject,
   expressjs,
   java,
@@ -379,58 +380,7 @@ export const homePage: IHomePage = {
       },
     ],
     inprogress: [
-      /*  {
-        name: 'Discord Clone',
-        description: `In Entwicklung: Dieses Projekt befindet sich derzeit in einem frühen Stadium. 
-        Das Ziel ist es, einen vollständig funktionsfähigen Discord-Klon zu erstellen`,
-        tags: [
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'RSC React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'Zustand',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Clerk',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Prisma',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'MySQL',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Shadcn',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'pink-text-gradient',
-          },
-        ],
-        image: discordproject,
-        webpage_link: '',
-        source_code_link: 'https://github.com/josemontano1996/discord-clone',
-      }, */
-
-      {
+      /* {
         name: 'Chef Website',
         description: `In Entwicklung: Private Chef Full-Stack-Webseite, die für 
         die Lebensmittelzustellung und das Veranstaltungsmanagement verwendet wird.`,
@@ -471,6 +421,39 @@ export const homePage: IHomePage = {
         image: chefWebpage,
         webpage_link: '',
         source_code_link: 'https://github.com/josemontano1996/nextjs13-ingrid-webpage',
+      }, */
+      {
+        name: 'Assets E-commerce',
+        description: `In Entwicklung: Dummy-Digital-Assets vollwertiger E-Commerce. Derzeit in Entwicklung.`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+        ],
+        image: digitalHippo,
+        webpage_link: 'https://digital-hippo-ecommerce.vercel.app/',
+        source_code_link: 'https://github.com/josemontano1996/digital-hippo-ecommerce',
       },
       {
         name: 'PEP Website',
