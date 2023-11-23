@@ -382,7 +382,7 @@ export const homePage: IHomePage = {
       },
     ],
     inprogress: [
-      /* {
+      {
         name: 'Chef Webpage',
         description: `In development: Private Chef Full-Stack webpage that will be 
         used for food delivery and events management.`,
@@ -421,42 +421,10 @@ export const homePage: IHomePage = {
           },
         ],
         image: chefWebpage,
-        webpage_link: '',
-        source_code_link: 'https://github.com/josemontano1996/nextjs13-ingrid-webpage',
-      }, */
-      {
-        name: 'Assets E-commerce',
-        description: `In development: Dummy digital assets full-stack e-commerce. Currently in development.`,
-        tags: [
-          {
-            name: 'Fully-Responsive',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'RSC',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'blue-text-gradient',
-          },
-        ],
-        image: digitalhippo,
-        webpage_link: 'https://digital-hippo-ecommerce.vercel.app/',
-        source_code_link: 'https://github.com/josemontano1996/digital-hippo-ecommerce',
+        webpage_link: 'https://ingrid-webpage.vercel.app/en',
+        source_code_link: 'https://github.com/josemontano1996/ingrid-webpage',
       },
+
       {
         name: 'PEP Website',
         description: `In development: Creating a brand-new website that allows donors to donate money throught the website,
@@ -512,7 +480,7 @@ export const footer: IFooter = {
 export const navBar: INavBar = {
   about: 'About',
   experience: 'Experience',
-  projects:'Projects',
+  projects: 'Projects',
   contact: 'Contact',
 };
 

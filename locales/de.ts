@@ -380,7 +380,7 @@ export const homePage: IHomePage = {
       },
     ],
     inprogress: [
-      /* {
+      {
         name: 'Chef Website',
         description: `In Entwicklung: Private Chef Full-Stack-Webseite, die für 
         die Lebensmittelzustellung und das Veranstaltungsmanagement verwendet wird.`,
@@ -419,41 +419,8 @@ export const homePage: IHomePage = {
           },
         ],
         image: chefWebpage,
-        webpage_link: '',
-        source_code_link: 'https://github.com/josemontano1996/nextjs13-ingrid-webpage',
-      }, */
-      {
-        name: 'Assets E-commerce',
-        description: `In Entwicklung: Dummy-Digital-Assets vollwertiger E-Commerce. Derzeit in Entwicklung.`,
-        tags: [
-          {
-            name: 'Fully-Responsive',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'RSC',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'blue-text-gradient',
-          },
-        ],
-        image: digitalhippo,
-        webpage_link: 'https://digital-hippo-ecommerce.vercel.app/',
-        source_code_link: 'https://github.com/josemontano1996/digital-hippo-ecommerce',
+        webpage_link: 'https://ingrid-webpage.vercel.app/en',
+        source_code_link: 'https://github.com/josemontano1996/ingrid-webpage',
       },
       {
         name: 'PEP Website',
