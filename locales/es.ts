@@ -379,14 +379,15 @@ export const homePage: IHomePage = {
     ],
     inprogress: [
       {
-        name: 'Chef Webpage',
-        description: `En desarrollo: Página web completa de Private Chef 
-        que se utilizará para la entrega de alimentos y la gestión de eventos.`,
+        name: 'PEP Website',
+        description: `En desarrollo: Por ahora solo disponible en pantallas grandes. Creación de un sitio web completamente nuevo que permite 
+        a los donantes donar dinero a través del sitio web, 
+        con internacionalización en tres idiomas y las mejores prácticas de SEO.`,
         tags: [
-          {
+          /*  {
             name: 'Fully-Responsive',
             color: 'pink-text-gradient',
-          },
+          }, */
           {
             name: 'TypeScript',
             color: 'blue-text-gradient',
@@ -398,6 +399,44 @@ export const homePage: IHomePage = {
           {
             name: 'React',
             color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Stripe Payments',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: pepWebpage,
+        webpage_link: 'https://pep-jade.vercel.app/',
+        source_code_link: 'https://github.com/josemontano1996/pep-webpage',
+      },
+      {
+        name: 'Chef Webpage',
+        description: `En desarrollo: Página web completa de Private Chef 
+        que se utilizará para la entrega de alimentos y la gestión de eventos.`,
+        tags: [
+          /*   {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          }, */
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
           },
           {
             name: 'RSC React',
@@ -419,49 +458,6 @@ export const homePage: IHomePage = {
         image: chefWebpage,
         webpage_link: 'https://ingrid-webpage.vercel.app/en',
         source_code_link: 'https://github.com/josemontano1996/ingrid-webpage',
-      },
-      {
-        name: 'PEP Website',
-        description: `En desarrollo: Creación de un sitio web completamente nuevo que permite 
-        a los donantes donar dinero a través del sitio web, 
-        con internacionalización en tres idiomas y las mejores prácticas de SEO.`,
-        tags: [
-          {
-            name: 'Fully-Responsive',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'RSC',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'Stripe Payments',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'React i18next',
-            color: 'pink-text-gradient',
-          },
-        ],
-        image: pepWebpage,
-        webpage_link: '',
-        source_code_link: '',
       },
     ],
   },

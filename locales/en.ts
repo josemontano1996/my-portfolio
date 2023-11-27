@@ -383,14 +383,15 @@ export const homePage: IHomePage = {
     ],
     inprogress: [
       {
-        name: 'Chef Webpage',
-        description: `In development: Private Chef Full-Stack webpage that will be 
-        used for food delivery and events management.`,
+        name: 'PEP Website',
+        description: `In development: By now only developed for big screeens. Creating a brand-new website that allows donors to donate money throught the website,
+        with internationalization in 3 languages and
+        best SEO practices`,
         tags: [
-          {
+          /* {
             name: 'Fully-Responsive',
             color: 'pink-text-gradient',
-          },
+          }, */
           {
             name: 'TypeScript',
             color: 'blue-text-gradient',
@@ -404,7 +405,45 @@ export const homePage: IHomePage = {
             color: 'pink-text-gradient',
           },
           {
-            name: 'Redux',
+            name: 'RSC',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Stripe Payments',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: pepWebpage,
+        webpage_link: 'https://pep-jade.vercel.app/',
+        source_code_link: 'https://github.com/josemontano1996/pep-webpage',
+      },
+      {
+        name: 'Chef Webpage',
+        description: `In development: Private Chef Full-Stack webpage that will be 
+        used for food delivery and events management.`,
+        tags: [
+        /*   {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          }, */
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
             color: 'pink-text-gradient',
           },
           {
@@ -423,50 +462,6 @@ export const homePage: IHomePage = {
         image: chefWebpage,
         webpage_link: 'https://ingrid-webpage.vercel.app/en',
         source_code_link: 'https://github.com/josemontano1996/ingrid-webpage',
-      },
-
-      {
-        name: 'PEP Website',
-        description: `In development: Creating a brand-new website that allows donors to donate money throught the website,
-        with internationalization in 3 languages and
-        best SEO practices`,
-        tags: [
-          {
-            name: 'Fully-Responsive',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'RSC',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'Stripe Payments',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'React i18next',
-            color: 'pink-text-gradient',
-          },
-        ],
-        image: pepWebpage,
-        webpage_link: '',
-        source_code_link: '',
       },
     ],
   },
