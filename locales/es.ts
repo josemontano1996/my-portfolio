@@ -8,7 +8,6 @@ import {
   chefWebpage,
   creator,
   css,
-  digitalhippo,
   expressjs,
   java,
   javascript,
@@ -154,7 +153,7 @@ export const homePage: IHomePage = {
         certification_url: '',
         icon: PEP,
         iconBg: '#383E56',
-        date: 'Octubre 2023 - Presente',
+        date: 'Diciembre 2023 - Enero 2024 (terminado)',
         points: [
           'Creación de un sitio web completamente nuevo desde cero.',
           'Desarrollo de un sitio web receptivo y multilingüe (alemán, español, inglés) con prácticas SEO de primera categoría.',
@@ -244,6 +243,48 @@ export const homePage: IHomePage = {
     inProgressTitle: 'En desarrollo',
     finishedProyectsTitle: 'Terminados',
     projects: [
+      {
+        name: 'PEP Website',
+        description: `Creación de un sitio web completamente nuevo que permite 
+        a los donantes donar dinero a través del sitio web, 
+        con internacionalización en tres idiomas y las mejores prácticas de SEO.`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Stripe',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: pepWebpage,
+        webpage_link: 'https://www.pepev.org/',
+      },
       {
         name: 'Tesla landing page',
         description: `En desarrollo: Replica de la landing page oficial de Tesla.`,
@@ -378,49 +419,6 @@ export const homePage: IHomePage = {
       },
     ],
     inprogress: [
-      {
-        name: 'PEP Website',
-        description: `En desarrollo: Por ahora solo disponible en pantallas grandes. Creación de un sitio web completamente nuevo que permite 
-        a los donantes donar dinero a través del sitio web, 
-        con internacionalización en tres idiomas y las mejores prácticas de SEO.`,
-        tags: [
-          /*  {
-            name: 'Fully-Responsive',
-            color: 'pink-text-gradient',
-          }, */
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'RSC',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Stripe Payments',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'React i18next',
-            color: 'pink-text-gradient',
-          },
-        ],
-        image: pepWebpage,
-        webpage_link: 'https://pep-jade.vercel.app/',
-        source_code_link: 'https://github.com/josemontano1996/pep-webpage',
-      },
       {
         name: 'Chef Webpage',
         description: `En desarrollo: Página web completa de Private Chef 

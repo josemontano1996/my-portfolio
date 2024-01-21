@@ -8,7 +8,6 @@ import {
   chefWebpage,
   creator,
   css,
-  digitalhippo,
   expressjs,
   java,
   javascript,
@@ -155,7 +154,7 @@ export const homePage: IHomePage = {
         company_name: 'PEP e.V',
         icon: PEP,
         iconBg: '#383E56',
-        date: 'Oktober 2023 - Heute',
+        date: 'Dezember 2023 - Januar 2024 (fertig)',
         points: [
           'Erstellung einer brandneuen Website von Grund auf.',
           'Entwicklung einer reaktionsschnellen, mehrsprachigen Website (Deutsch, Spanisch, Englisch) mit erstklassigen SEO-Praktiken.',
@@ -243,6 +242,48 @@ export const homePage: IHomePage = {
     inProgressTitle: 'In Entwicklung',
     finishedProyectsTitle: 'Fertig',
     projects: [
+      {
+        name: 'PEP Website',
+        description: `Erstellung einer brandneuen Website, die es Spendern ermöglicht, 
+        Geld über die Website zu spenden, 
+        mit Internationalisierung in drei Sprachen und den besten SEO-Praktiken.`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC React',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Stripe',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: pepWebpage,
+        webpage_link: 'https://www.pepev.org',
+      },
       {
         name: 'Tesla landing page',
         description: `In Entwicklung: Replik der offiziellen Tesla-Landingpage.`,
@@ -380,54 +421,11 @@ export const homePage: IHomePage = {
     ],
     inprogress: [
       {
-        name: 'PEP Website',
-        description: `In Entwicklung: Mittlerweile nur noch auf großen Bildschirmen fertig. Erstellung einer brandneuen Website, die es Spendern ermöglicht, 
-        Geld über die Website zu spenden, 
-        mit Internationalisierung in drei Sprachen und den besten SEO-Praktiken.`,
-        tags: [
-          /*  {
-            name: 'Fully-Responsive',
-            color: 'pink-text-gradient',
-          }, */
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'React',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'RSC React',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Stripe Payments',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'React i18next',
-            color: 'pink-text-gradient',
-          },
-        ],
-        image: pepWebpage,
-        webpage_link: 'https://pep-jade.vercel.app/',
-        source_code_link: 'https://github.com/josemontano1996/pep-webpage',
-      },
-      {
         name: 'Chef Website',
         description: `In Entwicklung: Private Chef Full-Stack-Webseite, die für 
         die Lebensmittelzustellung und das Veranstaltungsmanagement verwendet wird.`,
         tags: [
-         /*  {
+          /*  {
             name: 'Fully-Responsive',
             color: 'pink-text-gradient',
           }, */
