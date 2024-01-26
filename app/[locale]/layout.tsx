@@ -1,3 +1,6 @@
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 import { Inter } from 'next/font/google';
 import '../globals.css';
 
@@ -23,17 +26,15 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <UIProvider>
-        <body
-          className={`${inter.className} bg-primary sm:px-16 px-6 w-screen`}
-        >
+        <body className={`${inter.className} bg-primary sm:px-16 px-6 w-screen`}>
           <Navbar />
           <div className='mt-[10vh]'>{children}</div>
           <Contact />
         </body>
       </UIProvider>
+      <Analytics />
+      <SpeedInsights />
     </html>
   );
 }
-
-
 

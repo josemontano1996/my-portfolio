@@ -12,6 +12,8 @@
     "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.88.6",
     "@react-three/fiber": "^8.15.6",
+    "@vercel/analytics": "^1.1.2",
+    "@vercel/speed-insights": "^1.0.8",
     "framer-motion": "^10.16.4",
     "i18next": "^23.6.0",
     "i18next-resources-to-backend": "^1.1.4",
