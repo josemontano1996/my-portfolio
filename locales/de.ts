@@ -286,7 +286,7 @@ export const homePage: IHomePage = {
       },
       {
         name: 'Tesla landing page',
-        description: `In Entwicklung: Replik der offiziellen Tesla-Landingpage.`,
+        description: `Replik der offiziellen Tesla-Landingpage.`,
         tags: [
           {
             name: 'Desktop',
@@ -314,7 +314,7 @@ export const homePage: IHomePage = {
           },
         ],
         image: teslaLanding,
-        webpage_link: 'https://peaceful-paletas-a104e7.netlify.app/',
+        webpage_link: 'https://tesla-landing-clone-ebon.vercel.app',
         source_code_link: 'https://github.com/josemontano1996/tesla-landing-clone',
       },
       {
@@ -349,7 +349,7 @@ export const homePage: IHomePage = {
           },
         ],
         image: portfolioWeb,
-        webpage_link: 'https://jm3development.vercel.app',
+        webpage_link: 'https://www.jm3.dev',
         source_code_link: 'https://github.com/josemontano1996/my-portfolio',
       },
       {
@@ -425,10 +425,10 @@ export const homePage: IHomePage = {
         description: `In Entwicklung: Private Chef Full-Stack-Webseite, die für 
         die Lebensmittelzustellung und das Veranstaltungsmanagement verwendet wird.`,
         tags: [
-          /*  {
+          {
             name: 'Fully-Responsive',
             color: 'pink-text-gradient',
-          }, */
+          },
           {
             name: 'TypeScript',
             color: 'blue-text-gradient',
@@ -455,8 +455,8 @@ export const homePage: IHomePage = {
           },
         ],
         image: chefWebpage,
-        webpage_link: 'https://ingrid-webpage.vercel.app/en',
-        source_code_link: 'https://github.com/josemontano1996/ingrid-webpage',
+        webpage_link: '',
+        source_code_link: 'https://github.com/josemontano1996/chef-bautista-webpage',
       },
     ],
   },
