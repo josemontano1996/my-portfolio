@@ -428,10 +428,10 @@ export const homePage: IHomePage = {
         description: `In development: Private Chef Full-Stack webpage that will be 
         used for food delivery and events management.`,
         tags: [
-          /*   {
+          {
             name: 'Fully-Responsive',
             color: 'pink-text-gradient',
-          }, */
+          },
           {
             name: 'TypeScript',
             color: 'blue-text-gradient',
@@ -458,7 +458,7 @@ export const homePage: IHomePage = {
           },
         ],
         image: chefWebpage,
-        webpage_link: 'https://ingrid-webpage.vercel.app/en',
+        webpage_link: 'https://chef-bautista-webpage.vercel.app',
         source_code_link: 'https://github.com/josemontano1996/ingrid-webpage',
       },
     ],
