@@ -14,6 +14,12 @@ dependencies:
   '@react-three/fiber':
     specifier: ^8.16.2
     version: 8.16.2(react-dom@18.2.0)(react@18.2.0)(three@0.163.0)
+  '@vercel/analytics':
+    specifier: ^1.2.2
+    version: 1.2.2(next@13.5.6)(react@18.2.0)
+  '@vercel/speed-insights':
+    specifier: ^1.0.10
+    version: 1.0.10(next@13.5.6)(react@18.2.0)
   framer-motion:
     specifier: ^10.18.0
     version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
@@ -665,15 +671,24 @@ packages:
       react: 18.2.0
     dev: false
 
-<<<<<<< HEAD
-  /@vercel/analytics@1.1.2:
-    resolution: {integrity: sha512-CodhkLCQ/EHzjX8k+Qg+OzTBY0UadykrcfolfSOJVZZY/ZJM5nbhztm9KdbYvMfqKlasAr1+OYy0ThZnDA/MYA==}
+  /@vercel/analytics@1.2.2(next@13.5.6)(react@18.2.0):
+    resolution: {integrity: sha512-X0rctVWkQV1e5Y300ehVNqpOfSOufo7ieA5PIdna8yX/U7Vjz0GFsGf4qvAhxV02uQ2CVt7GYcrFfddXXK2Y4A==}
+    peerDependencies:
+      next: '>= 13'
+      react: ^18 || ^19
+    peerDependenciesMeta:
+      next:
+        optional: true
+      react:
+        optional: true
     dependencies:
+      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
       server-only: 0.0.1
     dev: false
 
-  /@vercel/speed-insights@1.0.8(next@13.5.6)(react@18.2.0):
-    resolution: {integrity: sha512-x1V9MHUMGkaNafmgY0qRbmbr+jfeU+Cvo5KgreeEGo63SFuBYRg9RS52GUJ9p82nEL6NBzc9HNru6fkcvufYcQ==}
+  /@vercel/speed-insights@1.0.10(next@13.5.6)(react@18.2.0):
+    resolution: {integrity: sha512-4uzdKB0RW6Ff2FkzshzjZ+RlJfLPxgm/00i0XXgxfMPhwnnsk92YgtqsxT9OcPLdJUyVU1DqFlSWWjIQMPkh0g==}
     requiresBuild: true
     peerDependencies:
       '@sveltejs/kit': ^1 || ^2
@@ -700,10 +715,7 @@ packages:
       react: 18.2.0
     dev: false
 
-  /acorn-jsx@5.3.2(acorn@8.10.0):
-=======
   /acorn-jsx@5.3.2(acorn@8.11.3):
->>>>>>> dev
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -3194,17 +3206,12 @@ packages:
     dependencies:
       lru-cache: 6.0.0
 
-<<<<<<< HEAD
   /server-only@0.0.1:
     resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
     dev: false
 
-  /set-function-length@1.1.1:
-    resolution: {integrity: sha512-VoaqjbBJKiWtg4yRcKBQ7g7wnGnLV3M8oLvVWwOk2PdYY6PEFegR1vezXR0tw6fZGF9csVakIRjrJiy2veSBFQ==}
-=======
   /set-function-length@1.2.2:
     resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
->>>>>>> dev
     engines: {node: '>= 0.4'}
     dependencies:
       define-data-property: 1.1.4
