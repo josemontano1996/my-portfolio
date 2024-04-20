@@ -57,6 +57,7 @@ export const TechStackCard: FC<Props> = ({ index, title, ul, icon, callToAction 
                   {li.icon && (
                     <Image
                       src={li.icon}
+                      priority
                       width={30}
                       alt={li.alt || ''}
                       className={li.bg ? `bg-white p-1` : ''}

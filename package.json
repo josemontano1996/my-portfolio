@@ -17,6 +17,7 @@
     "framer-motion": "^10.18.0",
     "i18next": "^23.11.2",
     "i18next-resources-to-backend": "^1.2.1",
+    "install": "^0.13.0",
     "maath": "^0.10.7",
     "next": "13.5.6",
     "next-i18n-router": "^5.4.0",
