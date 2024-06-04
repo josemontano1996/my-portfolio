@@ -153,7 +153,7 @@ export const homePage: IHomePage = {
         certification_url: '',
         icon: PEP,
         iconBg: '#383E56',
-        date: 'Diciembre 2023 - Enero 2024 (terminado)',
+        date: 'Diciembre 2023 - Presente',
         points: [
           'Creación de un sitio web completamente nuevo desde cero.',
           'Desarrollo de un sitio web receptivo y multilingüe (alemán, español, inglés) con prácticas SEO de primera categoría.',
@@ -244,7 +244,7 @@ export const homePage: IHomePage = {
     finishedProyectsTitle: 'Terminados',
     projects: [
       {
-        name: 'PEP Website',
+        name: 'www.pepev.org',
         description: `Creación de un sitio web completamente nuevo que permite 
         a los donantes donar dinero a través del sitio web, 
         con internacionalización en tres idiomas y las mejores prácticas de SEO.`,
@@ -454,8 +454,8 @@ export const homePage: IHomePage = {
           },
         ],
         image: chefWebpage,
-        webpage_link: 'https://chef-bautista-webpage.vercel.app',
-        source_code_link: 'https://github.com/josemontano1996/ingrid-webpage',
+        webpage_link: 'https://ingridbautistademo.netlify.app/',
+        source_code_link: 'https://github.com/josemontano1996/ingridbautista.com',
       },
     ],
   },

@@ -154,7 +154,7 @@ export const homePage: IHomePage = {
 
         icon: PEP,
         iconBg: '#383E56',
-        date: 'December 2023 - January 2024 (finished)',
+        date: 'December 2023 - Present',
         points: [
           'Creating a brand-new website from scratch.',
           'Developing a responsive, multilingual site (German, Spanish, English) with top-notch SEO practices.',
@@ -248,7 +248,7 @@ export const homePage: IHomePage = {
     finishedProyectsTitle: 'Finished',
     projects: [
       {
-        name: 'PEP Website',
+        name: 'www.pepev.org',
         description: `Creating a brand-new website that allows donors to donate money throught the website,
         with internationalization in 3 languages and
         best SEO practices`,
@@ -458,8 +458,8 @@ export const homePage: IHomePage = {
           },
         ],
         image: chefWebpage,
-        webpage_link: 'https://chef-bautista-webpage.vercel.app',
-        source_code_link: 'https://github.com/josemontano1996/ingrid-webpage',
+        webpage_link: 'https://ingridbautistademo.netlify.app/',
+        source_code_link: 'https://github.com/josemontano1996/ingridbautista.com',
       },
     ],
   },
@@ -482,7 +482,7 @@ export const contactPopUp: IContactPopUp = {
   callToAction: 'My Linkedin Account',
   title: 'Contact.',
   name: 'Your name',
-  nameLabel: `What's your good name?`,
+  nameLabel: `What's your name?`,
   email: 'Your Email',
   emailLabel: `What's your email address`,
   message: 'Your Message',

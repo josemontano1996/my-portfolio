@@ -154,7 +154,7 @@ export const homePage: IHomePage = {
         company_name: 'PEP e.V',
         icon: PEP,
         iconBg: '#383E56',
-        date: 'Dezember 2023 - Januar 2024 (fertig)',
+        date: 'Dezember 2023 - Aktiv',
         points: [
           'Erstellung einer brandneuen Website von Grund auf.',
           'Entwicklung einer reaktionsschnellen, mehrsprachigen Website (Deutsch, Spanisch, Englisch) mit erstklassigen SEO-Praktiken.',
@@ -170,7 +170,7 @@ export const homePage: IHomePage = {
         certification_url: '',
         icon: nebrija,
         iconBg: '#383E56',
-        date: 'Oktober 2023 - Heute',
+        date: 'Oktober 2023 - Aktiv',
         points: [
           'Erlernen des Kerns der Softwareentwicklung.',
           'Entwicklung und Wartung von Webanwendungen unter Verwendung von Technologien wie Java, PHP oder anderen relevanten Sprachen.',
@@ -243,7 +243,7 @@ export const homePage: IHomePage = {
     finishedProyectsTitle: 'Fertig',
     projects: [
       {
-        name: 'PEP Website',
+        name: 'www.pepev.org',
         description: `Erstellung einer brandneuen Website, die es Spendern ermöglicht, 
         Geld über die Website zu spenden, 
         mit Internationalisierung in drei Sprachen und den besten SEO-Praktiken.`,
@@ -455,8 +455,8 @@ export const homePage: IHomePage = {
           },
         ],
         image: chefWebpage,
-        webpage_link: 'https://chef-bautista-webpage.vercel.app',
-        source_code_link: 'https://github.com/josemontano1996/ingrid-webpage',
+        webpage_link: 'https://ingridbautistademo.netlify.app/',
+        source_code_link: 'https://github.com/josemontano1996/ingridbautista.com',
       },
     ],
   },
